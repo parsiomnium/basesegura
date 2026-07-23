@@ -1,6 +1,7 @@
 import { getArticle, getAllArticles } from '@/lib/content'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import type { Metadata } from 'next'
 
 const groupLabels: Record<string, string> = {
   prevenir: 'Prevenir',
@@ -21,6 +22,22 @@ const riskColors: Record<string, string> = {
   medio: 'bg-yellow-100 text-yellow-800',
   alto: 'bg-orange-100 text-orange-800',
   critico: 'bg-red-100 text-red-800',
+}
+
+export async function generateMetadata({ params }: { params: { group: string; slug: string } }): Promise<Metadata> {
+  const article = await getArticle(params.group, params.slug)
+  if (!article) return {}
+
+  return {
+    title: `${article.title} — Base Segura`,
+    description: article.description,
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      type: 'article',
+      siteName: 'Base Segura',
+    },
+  }
 }
 
 export default async function ArticlePage({ params }: { params: { group: string; slug: string } }) {
