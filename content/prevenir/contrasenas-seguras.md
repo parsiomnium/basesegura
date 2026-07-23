@@ -42,7 +42,7 @@ Eso tiene 31 caracteres. Es más fuerte que `G@t0$2026!` y más fácil de record
 
 No puedes memorizar 50 frases distintas. Para eso existen los gestores de contraseñas — guardan todas tus contraseñas bajo llave detrás de una sola contraseña principal.
 
-Ver: [Qué es un gestor de contraseñas](/cuentas/gestores-de-contrasenas)
+Ver: [Qué es un gestor de contraseñas](/prevenir/gestores-de-contrasenas)
 
 ---
 

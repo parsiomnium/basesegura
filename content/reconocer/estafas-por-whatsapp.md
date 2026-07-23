@@ -61,7 +61,7 @@ Te llega un mensaje ofreciendo trabajo fácil con buen sueldo: dar "likes" en vi
 2. **Bloquea y reporta.** Mantén presionado el mensaje → Reportar. O ve al perfil del contacto → Reportar contacto.
 3. **Si te piden un código, no lo envíes.** Nunca. Sin excepciones.
 4. **Si te piden dinero un "familiar", verifica.** Llama al número que ya tenías de esa persona.
-5. **Si perdiste tu cuenta**, ve a: [Me hackearon una cuenta](/emergencias/me-hackearon-una-cuenta)
+5. **Si perdiste tu cuenta**, ve a: [Me hackearon una cuenta](/reaccionar/me-hackearon-una-cuenta)
 
 ---
 
@@ -76,7 +76,7 @@ Te llega un mensaje ofreciendo trabajo fácil con buen sueldo: dar "likes" en vi
 
 ## Cómo protegerte antes de que pase
 
-- Activa la verificación en dos pasos en WhatsApp — así aunque alguien consiga tu código SMS, necesita además tu PIN para robar tu cuenta. Ver: [Verificación en dos pasos](/cuentas/verificacion-en-dos-pasos)
+- Activa la verificación en dos pasos en WhatsApp — así aunque alguien consiga tu código SMS, necesita además tu PIN para robar tu cuenta. Ver: [Verificación en dos pasos](/prevenir/verificacion-en-dos-pasos)
 - Configura quién puede agregarte a grupos: solo tus contactos. Ver: [WhatsApp](/guias/whatsapp#privacidad)
 - Oculta tu foto de perfil a desconocidos — la usan para hacerse pasar por ti con otros
 

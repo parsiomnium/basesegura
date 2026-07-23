@@ -60,11 +60,11 @@ No te proteges de hackers con capucha en un sótano oscuro. Te proteges de:
 
 Si nunca hiciste nada de esto, empieza por tres cosas:
 
-1. **Revisa tu contraseña del correo.** Si es corta, simple o la usas en otro lado, cámbiala hoy. Ver: [Cómo crear contraseñas seguras](/cuentas/contrasenas-seguras)
+1. **Revisa tu contraseña del correo.** Si es corta, simple o la usas en otro lado, cámbiala hoy. Ver: [Cómo crear contraseñas seguras](/prevenir/contrasenas-seguras)
 
-2. **Activa la verificación en dos pasos en tu correo.** Así aunque alguien tenga tu contraseña, no puede entrar sin tu celular. Ver: [Verificación en dos pasos](/cuentas/verificacion-en-dos-pasos)
+2. **Activa la verificación en dos pasos en tu correo.** Así aunque alguien tenga tu contraseña, no puede entrar sin tu celular. Ver: [Verificación en dos pasos](/prevenir/verificacion-en-dos-pasos)
 
-3. **Aprende a reconocer una estafa.** La mayoría de los ataques a personas normales son mensajes falsos que intentan engañarte. Ver: [Cómo detectar phishing](/estafas/phishing)
+3. **Aprende a reconocer una estafa.** La mayoría de los ataques a personas normales son mensajes falsos que intentan engañarte. Ver: [Cómo detectar phishing](/reconocer/phishing)
 
 Si quieres un resumen rápido de todo lo que puedes hacer ahora: empieza por tu contraseña del correo.
 

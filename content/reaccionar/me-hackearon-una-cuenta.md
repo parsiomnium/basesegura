@@ -30,7 +30,7 @@ Actúa rápido. Mientras más esperes, más difícil es recuperarla.
 | WhatsApp | [Recuperar cuenta de WhatsApp](/guias/whatsapp/recuperar-cuenta) |
 | Instagram | [Recuperar cuenta de Instagram](/guias/instagram/recuperar-cuenta) |
 | Facebook | [Recuperar cuenta de Facebook](/guias/facebook/recuperar-cuenta) |
-| Banco | [Fraude bancario — qué hacer y cómo denunciar](/emergencias/fraude-bancario) |
+| Banco | [Fraude bancario — qué hacer y cómo denunciar](/reaccionar/fraude-bancario) |
 
 ---
 
@@ -46,10 +46,10 @@ Mientras sigues los pasos de recuperación:
 
 ## Después de recuperarla
 
-1. Cambia tu contraseña por una nueva, larga, que no uses en ningún otro lado. Ver: [Cómo crear contraseñas seguras](/cuentas/contrasenas-seguras)
+1. Cambia tu contraseña por una nueva, larga, que no uses en ningún otro lado. Ver: [Cómo crear contraseñas seguras](/prevenir/contrasenas-seguras)
 2. Cierra todas las sesiones activas en la configuración de seguridad
 3. Revisa que tu correo y teléfono de recuperación sean los tuyos
-4. Activa la verificación en dos pasos. Ver: [Verificación en dos pasos](/cuentas/verificacion-en-dos-pasos)
+4. Activa la verificación en dos pasos. Ver: [Verificación en dos pasos](/prevenir/verificacion-en-dos-pasos)
 5. Cambia la contraseña en cualquier otro servicio donde usabas la misma
 
 ---

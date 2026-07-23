@@ -49,7 +49,7 @@ Es la única que vas a necesitar recordar. Tiene que ser larga y que no la uses 
 luna camino piedra octubre
 ```
 
-Ver: [Cómo crear contraseñas seguras](/cuentas/contrasenas-seguras)
+Ver: [Cómo crear contraseñas seguras](/prevenir/contrasenas-seguras)
 
 Si elegiste el gestor de Apple o Google, tu contraseña principal es la de tu cuenta de Apple o Google. Asegúrate de que sea fuerte.
 
