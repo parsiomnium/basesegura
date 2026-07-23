@@ -318,25 +318,26 @@ export default function VerificarSitioPage() {
             </p>
           </div>
 
-          {/* Further actions */}
-          <div className="text-sm text-[var(--text-secondary)] mt-8 p-4 rounded-md border border-[var(--border)]">
-            <p className="mb-3 text-[var(--text)]">
-              Este verificador usa herramientas básicas de ciberseguridad y aplica los mismos criterios que explico en{' '}
-              <Link href="/reconocer/como-verificar-una-pagina" className="text-[var(--accent)] hover:underline">
-                Cómo saber si una página es la oficial
-              </Link>. Pero ninguna herramienta funciona por sí sola — no existen sitios 100% seguros.
-            </p>
-            <p className="mb-3">
-              Te recomiendo que no te quedes solo con esta respuesta. Estas herramientas son útiles, y te enseño exactamente cómo usarlas y cómo entender todo lo que dicen:
-            </p>
-            <ul className="list-disc pl-5 space-y-1">
-              <li><Link href="/guias/virustotal/como-usarla" className="text-[var(--accent)] hover:underline">Cómo usar VirusTotal</Link></li>
-              <li><Link href="/guias/scamadviser/como-usarla" className="text-[var(--accent)] hover:underline">Cómo usar ScamAdviser</Link></li>
-              <li><Link href="/guias/whois/como-usarla" className="text-[var(--accent)] hover:underline">Cómo usar WHOIS</Link></li>
-            </ul>
-          </div>
         </div>
       )}
+
+      {/* Always visible — disclaimer and tools */}
+      <div className="text-sm text-[var(--text-secondary)] mt-8 p-4 rounded-md border border-[var(--border)]">
+        <p className="mb-3 text-[var(--text)]">
+          Este verificador usa herramientas básicas de ciberseguridad y aplica los mismos criterios que explico en{' '}
+          <Link href="/reconocer/como-verificar-una-pagina" className="text-[var(--accent)] hover:underline">
+            Cómo saber si una página es la oficial
+          </Link>. Pero ninguna herramienta funciona por sí sola — no existen sitios 100% seguros.
+        </p>
+        <p className="mb-3">
+          Te recomiendo que no te quedes solo con esta respuesta. Estas herramientas son útiles, y te enseño exactamente cómo usarlas y cómo entender todo lo que dicen:
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li><Link href="/guias/virustotal/como-usarla" className="text-[var(--accent)] hover:underline">Cómo usar VirusTotal</Link></li>
+          <li><Link href="/guias/scamadviser/como-usarla" className="text-[var(--accent)] hover:underline">Cómo usar ScamAdviser</Link></li>
+          <li><Link href="/guias/whois/como-usarla" className="text-[var(--accent)] hover:underline">Cómo usar WHOIS</Link></li>
+        </ul>
+      </div>
     </div>
   )
 }
