@@ -87,7 +87,7 @@ No necesitas entender estos campos:
 
 ## Ejemplo real
 
-### Sitio legítimo: `bancosantander.cl`
+### Sitio legítimo: `bci.cl`
 
 ![Resultado WHOIS de bci.cl](/img/guias/whois/resultado-bci.png)
 
