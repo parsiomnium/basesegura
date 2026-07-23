@@ -72,15 +72,15 @@ export default function Home() {
       <section>
         <h2 className="text-lg font-semibold mb-4">Aprender</h2>
         <div className="flex flex-wrap gap-2 mb-4">
-          <Link href="/aprender" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
+          <Link href="/aprender/basico" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
             Básico
           </Link>
-          <span className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm text-[var(--text-secondary)]">
-            Intermedio (pronto)
-          </span>
-          <span className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm text-[var(--text-secondary)]">
-            Avanzado (pronto)
-          </span>
+          <Link href="/aprender/intermedio" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
+            Intermedio
+          </Link>
+          <Link href="/aprender/avanzado" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
+            Avanzado
+          </Link>
         </div>
         <div className="mt-4">
           <h3 className="text-sm font-semibold text-[var(--text-secondary)] mb-2">Practica</h3>
