@@ -7,6 +7,7 @@ const API_URL = process.env.NEXT_PUBLIC_CHECKER_API_URL || 'http://localhost:878
 
 interface AgeResult {
   createdDate: string | null
+  expiresDate: string | null
   ageMonths: number | null
   ageLabel: string
 }
@@ -14,12 +15,17 @@ interface AgeResult {
 interface CheckResult {
   url: string
   domain: string
+  registrableDomain: string
+  dns: { resolves: boolean; ip: string | null }
+  http: { statusCode: number; serverHeader: string | null; hasHSTS: boolean; hasCSP: boolean } | null
+  ssl: { valid: boolean; matchesDomain: boolean } | null
   age: AgeResult | null
   safeBrowsing: { safe: boolean; threats: string[] }
   typosquatting: { similar: boolean; matchedDomain: string | null }
   registrant: string | null
-  redirects: { redirected: boolean; finalDomain: string | null }
+  redirects: { redirected: boolean; chain: string[]; finalDomain: string | null }
   verdict: 'safe' | 'caution' | 'danger'
+  verdictReason: string
 }
 
 const verdictConfig = {
@@ -143,34 +149,44 @@ export default function VerificarSitioPage() {
             <p className="text-lg font-medium">
               {verdictConfig[result.verdict].emoji} {verdictConfig[result.verdict].label}
             </p>
-            <p className="text-sm mt-1 opacity-80">Dominio analizado: {result.domain}</p>
+            <p className="text-sm mt-2">{result.verdictReason}</p>
+            <p className="text-xs mt-1 opacity-70">Dominio analizado: {result.registrableDomain}</p>
           </div>
 
           {/* Cards */}
           <div className="space-y-3">
-            {/* Age */}
-            {result.age && (
+            {/* DNS */}
+            <Card
+              status={result.dns.resolves ? 'green' : 'red'}
+              title="Resolución DNS"
+              detail={
+                result.dns.resolves
+                  ? `El dominio existe y apunta a ${result.dns.ip || 'una dirección válida'}`
+                  : 'Este dominio no resuelve — no existe ningún sitio en esta dirección'
+              }
+            />
+
+            {/* HTTP */}
+            {result.http && (
               <Card
-                status={
-                  result.age.ageMonths === null ? 'gray' :
-                  result.age.ageMonths < 1 ? 'red' :
-                  result.age.ageMonths < 3 ? 'yellow' : 'green'
-                }
-                title="Antigüedad del dominio"
-                detail={result.age.ageLabel}
+                status={result.http.statusCode >= 200 && result.http.statusCode < 400 ? 'green' : 'yellow'}
+                title="Respuesta del servidor"
+                detail={`Responde con código ${result.http.statusCode}${result.http.hasHSTS ? ' · Usa HSTS (fuerza HTTPS)' : ''}${result.http.hasCSP ? ' · Tiene política de seguridad de contenido' : ''}`}
               />
             )}
 
-            {/* Safe Browsing */}
-            <Card
-              status={result.safeBrowsing.safe ? 'green' : 'red'}
-              title="Reputación (Google Safe Browsing)"
-              detail={
-                result.safeBrowsing.safe
-                  ? 'Google no detecta amenazas en este sitio'
-                  : `Google lo marca como peligroso: ${result.safeBrowsing.threats.join(', ')}`
-              }
-            />
+            {/* SSL */}
+            {result.ssl && (
+              <Card
+                status={result.ssl.valid ? 'green' : 'yellow'}
+                title="Conexión cifrada (HTTPS)"
+                detail={
+                  result.ssl.valid
+                    ? 'Tiene certificado SSL válido — la conexión está cifrada (recuerda: esto no garantiza que sea confiable, solo que es cifrada)'
+                    : 'No usa HTTPS o el certificado no es válido. Cualquier dato que envíes puede ser interceptado.'
+                }
+              />
+            )}
 
             {/* Typosquatting */}
             {result.typosquatting.similar && (
@@ -188,6 +204,30 @@ export default function VerificarSitioPage() {
               />
             )}
 
+            {/* Age */}
+            {result.age && (
+              <Card
+                status={
+                  result.age.ageMonths === null ? 'gray' :
+                  result.age.ageMonths < 1 ? 'red' :
+                  result.age.ageMonths < 3 ? 'yellow' : 'green'
+                }
+                title="Antigüedad del dominio"
+                detail={result.age.ageLabel + (result.age.expiresDate ? ` · Expira: ${result.age.expiresDate}` : '')}
+              />
+            )}
+
+            {/* Safe Browsing */}
+            <Card
+              status={result.safeBrowsing.safe ? 'green' : 'red'}
+              title="Reputación (Google Safe Browsing)"
+              detail={
+                result.safeBrowsing.safe
+                  ? 'Google no detecta amenazas en este sitio'
+                  : `Google lo marca como peligroso: ${result.safeBrowsing.threats.join(', ')}`
+              }
+            />
+
             {/* Registrant */}
             <Card
               status={result.registrant ? 'green' : 'gray'}
@@ -204,10 +244,10 @@ export default function VerificarSitioPage() {
               <Card
                 status="yellow"
                 title="Redirección detectada"
-                detail={`Este sitio te redirige a otro dominio: ${result.redirects.finalDomain}`}
+                detail={`Este sitio te redirige a otro dominio: ${result.redirects.finalDomain}${result.redirects.chain.length > 1 ? ` (${result.redirects.chain.length} saltos)` : ''}`}
               />
             )}
-            {!result.redirects.redirected && (
+            {!result.redirects.redirected && result.dns.resolves && result.http && (
               <Card
                 status="green"
                 title="Sin redirecciones"
