@@ -20,6 +20,7 @@ const groups = [
 
 const guides = [
   { label: 'ChatGPT', href: '/guias/chatgpt' },
+  { label: 'Gemini', href: '/guias/gemini' },
   { label: 'WhatsApp', href: '/guias/whatsapp' },
   { label: 'Gmail', href: '/guias/gmail' },
   { label: 'Instagram', href: '/guias/instagram' },
