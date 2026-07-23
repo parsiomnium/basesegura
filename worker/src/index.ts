@@ -380,11 +380,14 @@ async function checkSafeBrowsing(url: string, apiKey: string): Promise<SafeBrows
 // --- Typosquatting ---
 
 function checkTyposquatting(registrableDomain: string): TyposquattingResult {
+  // If the domain IS a known domain, it's not typosquatting
+  if (KNOWN_DOMAINS.includes(registrableDomain)) {
+    return { similar: false, matchedDomain: null, distance: null }
+  }
+
   const domainBase = registrableDomain.replace(/\.[^.]+(\.[^.]+)?$/, '')
 
   for (const known of KNOWN_DOMAINS) {
-    if (registrableDomain === known) return { similar: false, matchedDomain: null, distance: null }
-
     const knownBase = known.replace(/\.[^.]+(\.[^.]+)?$/, '')
     const distance = levenshtein(domainBase, knownBase)
 

@@ -163,7 +163,7 @@ export default function VerificarSitioPage() {
               {verdictConfig[result.verdict].emoji} {verdictConfig[result.verdict].label}
             </p>
             <p className="text-sm mt-2">{result.verdictReason}</p>
-            <p className="text-xs mt-1 opacity-70">Dominio analizado: {result.registrableDomain}</p>
+            <p className="text-xs mt-1 opacity-70">Dominio analizado: {result.registrableDomain}{result.domain !== result.registrableDomain ? ` (subdominio: ${result.domain})` : ''}</p>
           </div>
 
           {/* Cards */}
@@ -184,7 +184,19 @@ export default function VerificarSitioPage() {
               <Card
                 status={result.http.statusCode >= 200 && result.http.statusCode < 400 ? 'green' : result.http.statusCode === 429 || result.http.statusCode === 403 ? 'green' : 'yellow'}
                 title="Respuesta del servidor"
-                detail={`${httpStatusLabel(result.http.statusCode)}${result.http.hasHSTS ? ' · Fuerza conexión segura (HSTS)' : ''}${result.http.hasCSP ? ' · Tiene política de seguridad de contenido' : ''}`}
+                detail={httpStatusLabel(result.http.statusCode)}
+              />
+            )}
+
+            {/* Security headers — only show if present */}
+            {result.http && (result.http.hasHSTS || result.http.hasCSP) && (
+              <Card
+                status="green"
+                title="Protecciones adicionales del sitio"
+                detail={[
+                  result.http.hasHSTS ? 'Fuerza conexión segura siempre (impide que te conectes sin cifrar, incluso por error)' : '',
+                  result.http.hasCSP ? 'Tiene políticas que limitan qué contenido puede cargarse en la página (dificulta ataques)' : '',
+                ].filter(Boolean).join(' · ')}
               />
             )}
 
