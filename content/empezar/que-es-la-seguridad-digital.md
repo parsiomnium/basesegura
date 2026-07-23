@@ -8,7 +8,7 @@ reading_time: 4
 created: 2026-07-22
 updated: 2026-07-22
 tags: [fundamentos, introduccion]
-related: [checklist-10-minutos, contrasenas-seguras]
+related: [contrasenas-seguras, verificacion-en-dos-pasos]
 status: published
 ---
 
@@ -65,7 +65,7 @@ Si nunca hiciste nada de esto, empieza por tres cosas:
 
 3. **Aprende a reconocer una estafa.** La mayoría de los ataques a personas normales son mensajes falsos que intentan engañarte. Ver: [Cómo detectar phishing](/estafas/phishing)
 
-Si quieres un resumen rápido de todo lo que puedes hacer en 10 minutos: [Checklist de 10 minutos](/empezar/checklist-10-minutos)
+Si quieres un resumen rápido de todo lo que puedes hacer ahora: empieza por tu contraseña del correo.
 
 ---
 

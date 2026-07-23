@@ -1,12 +1,16 @@
 import Link from 'next/link'
-import { getSections, getArticlesBySection } from '@/lib/content'
 
 const intentions = [
-  { label: 'Proteger mis cuentas', href: '/cuentas' },
-  { label: 'Detectar una estafa', href: '/estafas' },
+  { label: 'Proteger mis cuentas', href: '/cuentas/contrasenas-seguras' },
+  { label: 'Qué es un gestor de contraseñas', href: '/cuentas/gestores-de-contrasenas' },
+  { label: 'Activar verificación en dos pasos', href: '/cuentas/verificacion-en-dos-pasos' },
+  { label: 'Detectar una estafa', href: '/estafas/phishing' },
+  { label: 'Estafas por WhatsApp', href: '/estafas/estafas-por-whatsapp' },
   { label: 'Me robaron el celular', href: '/emergencias/me-robaron-el-telefono' },
-  { label: 'Recuperar una cuenta robada', href: '/emergencias/me-hackearon-una-cuenta' },
-  { label: 'Aprender desde cero', href: '/empezar/que-es-la-seguridad-digital' },
+  { label: 'Me hackearon una cuenta', href: '/emergencias/me-hackearon-una-cuenta' },
+  { label: 'Fraude en mi banco', href: '/emergencias/fraude-bancario' },
+  { label: '¿Necesito una VPN?', href: '/navegacion/vpn' },
+  { label: 'Qué es la seguridad digital', href: '/empezar/que-es-la-seguridad-digital' },
 ]
 
 const guides = [
@@ -18,8 +22,6 @@ const guides = [
 ]
 
 export default function Home() {
-  const sections = getSections()
-
   return (
     <div className="space-y-16">
       {/* Title */}
@@ -59,22 +61,6 @@ export default function Home() {
             >
               {item.label} (pronto)
             </span>
-          ))}
-        </div>
-      </section>
-
-      {/* Sections */}
-      <section>
-        <h2 className="text-lg font-semibold mb-4">Secciones</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          {sections.map(section => (
-            <Link
-              key={section}
-              href={`/${section}`}
-              className="px-3 py-2 rounded-md hover:bg-[var(--bg-secondary)] transition-colors text-sm capitalize"
-            >
-              {section}
-            </Link>
           ))}
         </div>
       </section>
