@@ -1,7 +1,7 @@
 ---
 title: "Cómo detectar phishing"
 description: "Aprende a reconocer mensajes falsos que intentan robar tus datos. La mayoría de los ataques a personas comunes empiezan así."
-section: cuidarme
+section: reconocer
 level: basico
 risk: alto
 reading_time: 5

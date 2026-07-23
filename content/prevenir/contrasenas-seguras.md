@@ -1,7 +1,7 @@
 ---
 title: "Cómo crear contraseñas seguras"
 description: "Un método simple para crear contraseñas que protejan tus cuentas sin memorizar combinaciones imposibles."
-section: protegerme
+section: prevenir
 level: basico
 risk: alto
 reading_time: 4

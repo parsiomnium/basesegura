@@ -2,31 +2,19 @@ import Link from 'next/link'
 
 const groups = [
   {
-    id: 'protegerme',
-    label: 'Quiero protegerme',
-    items: [
-      { label: 'Crear contraseñas seguras', href: '/protegerme/contrasenas-seguras' },
-      { label: 'Usar un gestor de contraseñas', href: '/protegerme/gestores-de-contrasenas' },
-      { label: 'Activar verificación en dos pasos', href: '/protegerme/verificacion-en-dos-pasos' },
-      { label: '¿Necesito una VPN?', href: '/protegerme/vpn' },
-    ],
+    id: 'prevenir',
+    label: 'Prevenir',
+    description: 'Protege tus cuentas y dispositivos antes de que pase algo',
   },
   {
-    id: 'cuidarme',
-    label: 'Me quiero cuidar de algo',
-    items: [
-      { label: 'Reconocer estafas por correo o SMS', href: '/cuidarme/phishing' },
-      { label: 'Estafas por WhatsApp', href: '/cuidarme/estafas-por-whatsapp' },
-    ],
+    id: 'reconocer',
+    label: 'Reconocer',
+    description: 'Aprende a identificar estafas y mensajes falsos',
   },
   {
-    id: 'me-paso-algo',
-    label: 'Me pasó algo',
-    items: [
-      { label: 'Me robaron el celular', href: '/me-paso-algo/me-robaron-el-telefono' },
-      { label: 'Me hackearon una cuenta', href: '/me-paso-algo/me-hackearon-una-cuenta' },
-      { label: 'Hicieron transacciones en mi banco', href: '/me-paso-algo/fraude-bancario' },
-    ],
+    id: 'reaccionar',
+    label: 'Reaccionar',
+    description: 'Te robaron, te hackearon o ves algo raro — actúa rápido',
   },
 ]
 
@@ -50,24 +38,21 @@ export default function Home() {
       </section>
 
       {/* Intention groups */}
-      {groups.map(group => (
-        <section key={group.id}>
-          <h2 className="text-lg font-semibold mb-4">{group.label}</h2>
-          <ul className="space-y-2">
-            {group.items.map(item => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="flex items-center justify-between py-2 px-3 rounded-md hover:bg-[var(--bg-secondary)] transition-colors"
-                >
-                  <span>{item.label}</span>
-                  <span className="text-[var(--text-secondary)]">→</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
+      <section className="space-y-3">
+        {groups.map(group => (
+          <Link
+            key={group.id}
+            href={`/${group.id}`}
+            className="flex items-center justify-between p-4 rounded-md hover:bg-[var(--bg-secondary)] transition-colors"
+          >
+            <div>
+              <h2 className="font-semibold">{group.label}</h2>
+              <p className="text-sm text-[var(--text-secondary)]">{group.description}</p>
+            </div>
+            <span className="text-[var(--text-secondary)]">→</span>
+          </Link>
+        ))}
+      </section>
 
       {/* Guides */}
       <section>

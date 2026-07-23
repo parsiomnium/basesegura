@@ -3,9 +3,9 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 
 const groupLabels: Record<string, string> = {
-  protegerme: 'Quiero protegerme',
-  cuidarme: 'Me quiero cuidar de algo',
-  'me-paso-algo': 'Me pasó algo',
+  prevenir: 'Prevenir',
+  reconocer: 'Reconocer',
+  reaccionar: 'Reaccionar',
   aprender: 'Aprender',
 }
 

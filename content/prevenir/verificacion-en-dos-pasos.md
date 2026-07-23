@@ -1,7 +1,7 @@
 ---
 title: "Cómo activar la verificación en dos pasos"
 description: "Un segundo candado para tus cuentas. Aunque alguien tenga tu contraseña, no puede entrar sin tu celular."
-section: protegerme
+section: prevenir
 level: basico
 risk: alto
 reading_time: 4
