@@ -13,11 +13,8 @@ export function Header() {
           Base Segura
         </Link>
         <nav className="flex items-center gap-4 text-sm">
-          <Link href="/aprender" className="hover:text-[var(--accent)]">
-            Aprender
-          </Link>
           <Link href="/sobre" className="hover:text-[var(--accent)]">
-            Sobre
+            Este proyecto
           </Link>
           <a
             href="https://github.com/parsiomnium/basesegura"
