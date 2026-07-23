@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --accent: #2596be;
-  --accent-dark: #1e376c;
+  --accent: #1e376c;
+  --accent-light: #2596be;
   --accent-green: #1fe67c;
   --bg: #fafafa;
   --bg-secondary: #f3f4f6;
@@ -15,7 +15,7 @@
 
 .dark {
   --accent: #2596be;
-  --accent-dark: #4a7fb8;
+  --accent-light: #2596be;
   --accent-green: #1fe67c;
   --bg: #111111;
   --bg-secondary: #1a1a1a;
