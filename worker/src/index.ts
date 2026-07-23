@@ -74,6 +74,8 @@ const BRAND_DOMAINS: Record<string, string[]> = {
   'wom': ['wom.cl'],
   'movistar': ['movistar.cl'],
   'claro': ['claro.cl'],
+  // Gobierno Chile (verificados 2026-07-23)
+  'chileatiende': ['chileatiende.gob.cl'],
   // Otros
   'hsbc': ['hsbc.com', 'hsbc.co.uk'],
   'outlook': ['outlook.com', 'outlook.live.com'],
