@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { LOGO_ASCII } from '@/lib/logo'
 
 const groups = [
   {
@@ -30,20 +29,10 @@ const guides = [
 export default function Home() {
   return (
     <div className="space-y-16">
-      {/* Hero: ASCII art + tagline */}
-      <section className="pt-8 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
-        <pre
-          aria-hidden="true"
-          className="font-mono text-[8px] sm:text-[10px] md:text-[13px] leading-tight whitespace-pre bg-gradient-to-r from-[var(--accent)] to-blue-400 bg-clip-text text-transparent select-none"
-        >
-          {LOGO_ASCII}
-        </pre>
-        <h1 className="text-xl md:text-2xl font-light leading-relaxed">
-          <span>Seguridad digital</span>
-          <br />
-          <span className="ml-4">para todas</span>
-          <br />
-          <span className="ml-8">las personas.</span>
+      {/* Hero */}
+      <section className="pt-8">
+        <h1 className="text-2xl md:text-3xl font-light leading-relaxed">
+          Seguridad digital para todas las personas.
         </h1>
       </section>
 
@@ -83,7 +72,7 @@ export default function Home() {
       <section>
         <h2 className="text-lg font-semibold mb-4">Aprender</h2>
         <div className="flex flex-wrap gap-2 mb-4">
-          <Link href="/aprender/basico" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
+          <Link href="/aprender" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
             Básico
           </Link>
           <span className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm text-[var(--text-secondary)]">
