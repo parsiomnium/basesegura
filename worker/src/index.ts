@@ -331,13 +331,23 @@ function checkBrandInSubdomain(fullDomain: string, registrableDomain: string): B
   // If the domain itself is a known brand domain, no issue
   if (KNOWN_DOMAINS.includes(registrableDomain)) return { detected: false, brand: null, realDomain: null }
 
-  const subdomainPart = fullDomain.replace(`.${registrableDomain}`, '')
-  if (!subdomainPart || subdomainPart === fullDomain) return { detected: false, brand: null, realDomain: null }
+  const fullLower = fullDomain.toLowerCase()
+  const regLower = registrableDomain.toLowerCase()
+  // Remove TLD from registrable domain for matching
+  const regBase = regLower.replace(/\.[^.]+(\.[^.]+)?$/, '')
 
-  // Check if any brand name appears in the subdomain or full domain
+  // Check if any brand name appears in the full domain or registrable base
   for (const [brand, domains] of Object.entries(BRAND_DOMAINS)) {
-    if (subdomainPart.includes(brand) || registrableDomain.includes(brand)) {
-      // Check if the registrable domain actually belongs to this brand
+    // Brand appears in subdomain part
+    const subdomainPart = fullLower.replace(`.${regLower}`, '')
+    if (subdomainPart !== fullLower && subdomainPart.includes(brand)) {
+      if (!domains.includes(registrableDomain)) {
+        return { detected: true, brand, realDomain: domains[0] }
+      }
+    }
+
+    // Brand appears in the registrable domain base (e.g. "netflixrimborso.com" contains "netflix")
+    if (regBase.includes(brand) && regBase !== brand) {
       if (!domains.includes(registrableDomain)) {
         return { detected: true, brand, realDomain: domains[0] }
       }
