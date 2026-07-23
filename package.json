@@ -1,0 +1,38 @@
+{
+  "name": "base-segura",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:content": "markdownlint-cli2 'content/**/*.md'",
+    "validate": "tsx scripts/validate-content.ts",
+    "check": "npm run lint:content && npm run validate && npm run build"
+  },
+  "dependencies": {
+    "gray-matter": "4.0.3",
+    "next": "14.2.35",
+    "react": "^18",
+    "react-dom": "^18",
+    "rehype-stringify": "10.0.1",
+    "remark-gfm": "4.0.0",
+    "remark-parse": "11.0.0",
+    "remark-rehype": "11.1.1",
+    "unified": "11.0.5",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
+    "markdownlint-cli2": "0.14.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "tsx": "4.19.1",
+    "typescript": "^5"
+  }
+}
