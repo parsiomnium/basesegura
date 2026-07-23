@@ -19,12 +19,12 @@ const groups = [
 ]
 
 const guides = [
-  { label: 'ChatGPT', href: '/guias/chatgpt/privacidad', ready: true },
-  { label: 'WhatsApp', href: '/guias/whatsapp', ready: false },
-  { label: 'Gmail', href: '/guias/gmail', ready: false },
-  { label: 'Instagram', href: '/guias/instagram', ready: false },
-  { label: 'Bitwarden', href: '/guias/bitwarden', ready: false },
-  { label: 'Proton VPN', href: '/guias/proton-vpn', ready: false },
+  { label: 'ChatGPT', href: '/guias/chatgpt' },
+  { label: 'WhatsApp', href: '/guias/whatsapp' },
+  { label: 'Gmail', href: '/guias/gmail' },
+  { label: 'Instagram', href: '/guias/instagram' },
+  { label: 'Bitwarden', href: '/guias/bitwarden' },
+  { label: 'Proton VPN', href: '/guias/proton-vpn' },
 ]
 
 export default function Home() {
@@ -59,22 +59,13 @@ export default function Home() {
         <h2 className="text-lg font-semibold mb-4">Guías por plataforma</h2>
         <div className="flex flex-wrap gap-2">
           {guides.map(item => (
-            item.ready ? (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
-              >
-                {item.label}
-              </Link>
-            ) : (
-              <span
-                key={item.href}
-                className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm text-[var(--text-secondary)]"
-              >
-                {item.label} (pronto)
-              </span>
-            )
+            <Link
+              key={item.href}
+              href={item.href}
+              className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+            >
+              {item.label}
+            </Link>
           ))}
         </div>
       </section>
