@@ -17,7 +17,7 @@ Este es el chuncho — un búho pigmeo austral, endémico de Chile. Es pequeño,
 
 Hice Base Segura porque no encontré lo que buscaba.
 
-Cuando intenté explicarle a mis padres cómo proteger sus cuentas, lo que existía en español era inútil para ellos: sitios de gobierno con lenguaje burocrático, portales en inglés que asumen que sabes qué es un protocolo, y artículos que venden miedo sin dar soluciones. Pensé en mis tíos, mis hermanos, mis sobrinos — todos usan internet a diario y ninguno tiene por qué saber de ciberseguridad.
+Cuando intenté explicarle a mi familia cómo proteger sus cuentas, lo que existía en español era inútil para ellos: sitios de gobierno con lenguaje burocrático, portales en inglés que asumen que sabes qué es un protocolo, y artículos que venden miedo sin dar soluciones. Pensé en mis tíos, mis hermanos, mis sobrinos — todos usan internet a diario y ninguno tiene por qué saber de ciberseguridad.
 
 El problema no es que falte información. Hay demasiada. Y eso también es una barrera — entre tantas fuentes, tantas opiniones y tanta contradicción, identificar lo realmente útil se vuelve imposible para alguien que no es técnico.
 
@@ -34,8 +34,8 @@ Hay otros sitios que hablan de seguridad. Lo que este hace distinto:
 - **Todo en español, para personas sin conocimientos técnicos.** No es una traducción de un sitio en inglés. Está pensado desde cero para hispanohablantes.
 - **Accionable primero.** Cada artículo te dice qué hacer antes de explicarte por qué. No necesitas entender el problema para resolverlo.
 - **Sin miedo.** No vendo paranoia. La seguridad es reducir riesgos, no vivir asustado.
-- **Sin publicidad ni patrocinios.** No recomiendo productos porque pagan. Solo por mérito.
-- **Fuentes verificables.** Cada dato tiene una referencia que puedes comprobar. Las recomendaciones se basan en los mismos estándares que usan bancos y gobiernos (NIST, OWASP, CIS) — pero explicados en lenguaje humano.
+- **Sin publicidad ni patrocinios.** 
+- **Fuentes verificables.** Cada dato tiene una referencia que puedes comprobar. Las recomendaciones se basan en los mismos estándares que usan bancos y gobiernos (NIST, OWASP, CIS).
 - **Fecha de actualización visible.** Sabes si lo que lees sigue vigente. Si un artículo lleva tiempo sin revisión, [te lo dice con un aviso claro](/vigencia).
 - **Código abierto.** El código y el contenido están públicos en GitHub. Cualquiera puede ver cómo se hizo, proponer correcciones o señalar errores.
 - **Un artículo te lleva al siguiente.** No te deja solo con una respuesta suelta — cada tema conecta con los demás.
