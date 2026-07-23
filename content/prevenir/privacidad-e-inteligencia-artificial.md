@@ -10,6 +10,7 @@ updated: 2026-07-23
 tags: [privacidad, inteligencia-artificial, datos-personales]
 related: [contrasenas-seguras, verificacion-en-dos-pasos]
 status: published
+content_type: prevent
 ---
 
 # Privacidad e inteligencia artificial: qué saben de ti y cómo limitarlo

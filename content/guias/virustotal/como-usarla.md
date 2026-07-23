@@ -10,6 +10,7 @@ updated: 2026-07-23
 tags: [herramientas, verificacion, urls]
 related: [como-verificar-una-pagina]
 status: published
+content_type: guide
 ---
 
 # Cómo usar VirusTotal para verificar un sitio web

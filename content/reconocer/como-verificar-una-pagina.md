@@ -11,6 +11,7 @@ tags: [phishing, urls, navegacion, estafas, compras-online]
 related: [phishing, estafas-por-whatsapp]
 tool: verificar-sitio
 status: published
+content_type: prevent
 ---
 
 # Cómo saber si una página web es la oficial

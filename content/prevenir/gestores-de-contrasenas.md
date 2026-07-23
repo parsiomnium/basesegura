@@ -10,6 +10,7 @@ updated: 2026-07-22
 tags: [contrasenas, cuentas, herramientas]
 related: [contrasenas-seguras, verificacion-en-dos-pasos]
 status: published
+content_type: prevent
 ---
 
 # Qué es un gestor de contraseñas

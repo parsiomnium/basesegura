@@ -10,6 +10,7 @@ updated: 2026-07-22
 tags: [emergencias, banco, fraude, denuncia, chile]
 related: [me-hackearon-una-cuenta, phishing]
 status: published
+content_type: action
 ---
 
 # Fraude bancario — qué hacer y cómo denunciar

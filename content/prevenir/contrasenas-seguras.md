@@ -10,6 +10,7 @@ updated: 2026-07-22
 tags: [contrasenas, cuentas, fundamentos]
 related: [gestores-de-contrasenas, verificacion-en-dos-pasos]
 status: published
+content_type: prevent
 ---
 
 # Cómo crear contraseñas seguras

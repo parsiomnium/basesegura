@@ -10,6 +10,7 @@ updated: 2026-07-22
 tags: [emergencias, celular, robo]
 related: [me-hackearon-una-cuenta, verificacion-en-dos-pasos]
 status: published
+content_type: action
 ---
 
 # Qué hacer si me robaron el teléfono

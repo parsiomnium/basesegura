@@ -11,6 +11,7 @@ tags: [phishing, estafas, correo, sms]
 related: [estafas-por-whatsapp, verificacion-en-dos-pasos]
 tool: simulador-phishing
 status: published
+content_type: prevent
 ---
 
 # Cómo detectar phishing

@@ -10,6 +10,7 @@ updated: 2026-07-22
 tags: [fundamentos, introduccion]
 related: [contrasenas-seguras, verificacion-en-dos-pasos]
 status: published
+content_type: learn
 ---
 
 # Qué es la seguridad digital

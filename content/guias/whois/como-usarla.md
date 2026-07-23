@@ -10,6 +10,7 @@ updated: 2026-07-23
 tags: [herramientas, verificacion, dominios]
 related: [como-verificar-una-pagina]
 status: published
+content_type: guide
 ---
 
 # Cómo usar WHOIS para verificar la antigüedad de un sitio web

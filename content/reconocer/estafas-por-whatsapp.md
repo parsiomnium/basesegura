@@ -10,6 +10,7 @@ updated: 2026-07-22
 tags: [estafas, whatsapp, suplantacion]
 related: [phishing, verificacion-en-dos-pasos]
 status: published
+content_type: prevent
 ---
 
 # Estafas por WhatsApp

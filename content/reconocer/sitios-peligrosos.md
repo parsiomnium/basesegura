@@ -10,6 +10,7 @@ updated: 2026-07-23
 tags: [malware, pirateria, descargas, navegacion, anuncios]
 related: [phishing, como-verificar-una-pagina]
 status: published
+content_type: prevent
 ---
 
 # Sitios web peligrosos: cuáles son y qué te puede pasar

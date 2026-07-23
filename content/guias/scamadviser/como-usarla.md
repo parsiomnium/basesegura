@@ -10,6 +10,7 @@ updated: 2026-07-23
 tags: [herramientas, verificacion, compras-online]
 related: [como-verificar-una-pagina]
 status: published
+content_type: guide
 ---
 
 # Cómo usar ScamAdviser para verificar un sitio web

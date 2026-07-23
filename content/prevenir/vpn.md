@@ -10,6 +10,7 @@ updated: 2026-07-22
 tags: [vpn, privacidad, navegacion]
 related: [que-es-la-seguridad-digital]
 status: published
+content_type: prevent
 country: all
 ---
 

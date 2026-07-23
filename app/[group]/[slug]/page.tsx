@@ -1,6 +1,7 @@
 import { getArticle, getAllArticles } from '@/lib/content'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import { FreshnessBanner } from '@/components/FreshnessBanner'
 import type { Metadata } from 'next'
 
 const groupLabels: Record<string, string> = {
@@ -84,6 +85,8 @@ export default async function ArticlePage({ params }: { params: { group: string;
           )}
         </div>
       </div>
+
+      <FreshnessBanner updated={article.updated} contentType={article.content_type} />
 
       <article
         className="prose max-w-none"

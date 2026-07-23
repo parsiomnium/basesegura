@@ -10,6 +10,7 @@ updated: 2026-07-22
 tags: [emergencias, hackeo, cuentas]
 related: [me-robaron-el-telefono, contrasenas-seguras, verificacion-en-dos-pasos, fraude-bancario]
 status: published
+content_type: action
 ---
 
 # Qué hacer si me hackearon una cuenta

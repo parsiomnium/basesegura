@@ -10,6 +10,7 @@ updated: 2026-07-23
 tags: [privacidad, inteligencia-artificial, gemini, google]
 related: [privacidad-e-inteligencia-artificial]
 status: published
+content_type: guide
 ---
 
 # Cómo configurar la privacidad en Gemini

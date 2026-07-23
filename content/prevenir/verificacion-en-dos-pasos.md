@@ -10,6 +10,7 @@ updated: 2026-07-22
 tags: [mfa, cuentas, fundamentos]
 related: [contrasenas-seguras, gestores-de-contrasenas]
 status: published
+content_type: prevent
 ---
 
 # Cómo activar la verificación en dos pasos

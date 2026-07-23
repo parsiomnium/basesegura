@@ -25,6 +25,7 @@ export interface ArticleMeta {
   tool?: string
   status?: string
   country?: string
+  content_type?: string
 }
 
 export interface ArticleData extends ArticleMeta {

@@ -30,7 +30,7 @@ Hay otros sitios que hablan de seguridad. Lo que este hace distinto:
 - **Sin miedo.** No vendo paranoia. La seguridad es reducir riesgos, no vivir asustado.
 - **Sin publicidad ni patrocinios.** No recomiendo productos porque pagan. Solo por mérito.
 - **Fuentes verificables.** Cada dato tiene una referencia que puedes comprobar. Las recomendaciones se basan en los mismos estándares que usan bancos y gobiernos (NIST, OWASP, CIS) — pero explicados en lenguaje humano.
-- **Fecha de actualización visible.** Sabes si lo que lees sigue vigente.
+- **Fecha de actualización visible.** Sabes si lo que lees sigue vigente. Si un artículo lleva tiempo sin revisión, [te lo dice con un aviso claro](/vigencia).
 - **Código abierto.** El código y el contenido están públicos en GitHub. Cualquiera puede ver cómo se hizo, proponer correcciones o señalar errores.
 - **Un artículo te lleva al siguiente.** No te deja solo con una respuesta suelta — cada tema conecta con los demás.
 
