@@ -2,6 +2,13 @@ import { getArticle, getAllArticles } from '@/lib/content'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 
+const groupLabels: Record<string, string> = {
+  protegerme: 'Quiero protegerme',
+  cuidarme: 'Me quiero cuidar de algo',
+  'me-paso-algo': 'Me pasó algo',
+  aprender: 'Aprender',
+}
+
 const riskLabels: Record<string, string> = {
   bajo: 'Riesgo bajo',
   medio: 'Riesgo medio',
@@ -16,36 +23,29 @@ const riskColors: Record<string, string> = {
   critico: 'bg-red-100 text-red-800',
 }
 
-export function generateStaticParams() {
-  return getAllArticles().map(a => ({
-    section: a.section,
-    slug: a.slug,
-  }))
-}
-
-export default async function ArticlePage({ params }: { params: { section: string; slug: string } }) {
-  const article = await getArticle(params.section, params.slug)
+export default async function ArticlePage({ params }: { params: { group: string; slug: string } }) {
+  const article = await getArticle(params.group, params.slug)
 
   if (!article) {
     notFound()
   }
 
-  // Format date properly
   const formatDate = (dateStr: string) => {
     const d = new Date(dateStr)
     if (isNaN(d.getTime())) return dateStr
     return d.toISOString().split('T')[0]
   }
 
+  const groupLabel = groupLabels[params.group] || params.group
+
   return (
     <div>
-      {/* Meta */}
       <div className="mb-8">
         <Link
-          href={`/${params.section}`}
+          href={`/${params.group}`}
           className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] mb-2 inline-block"
         >
-          ← {params.section}
+          ← {groupLabel}
         </Link>
         <h1 className="text-2xl font-bold mb-3">{article.title}</h1>
         <p className="text-[var(--text-secondary)] mb-4">{article.description}</p>
@@ -68,7 +68,6 @@ export default async function ArticlePage({ params }: { params: { section: strin
         </div>
       </div>
 
-      {/* Content — strip the first H1 since we already show the title above */}
       <article
         className="prose max-w-none"
         dangerouslySetInnerHTML={{
@@ -76,10 +75,16 @@ export default async function ArticlePage({ params }: { params: { section: strin
         }}
       />
 
-      {/* Updated */}
       <div className="mt-12 pt-4 border-t border-[var(--border)] text-sm text-[var(--text-secondary)]">
         Última actualización: {formatDate(article.updated)}
       </div>
     </div>
   )
+}
+
+export function generateStaticParams() {
+  return getAllArticles().map(a => ({
+    group: a.section,
+    slug: a.slug,
+  }))
 }

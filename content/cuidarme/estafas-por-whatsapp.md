@@ -1,7 +1,7 @@
 ---
 title: "Estafas por WhatsApp"
 description: "Las estafas más comunes que llegan por WhatsApp y cómo reconocerlas antes de caer."
-section: estafas
+section: cuidarme
 level: basico
 risk: alto
 reading_time: 5

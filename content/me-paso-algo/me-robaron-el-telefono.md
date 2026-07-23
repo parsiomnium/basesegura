@@ -1,7 +1,7 @@
 ---
 title: "Qué hacer si me robaron el teléfono"
 description: "Pasos inmediatos para proteger tus cuentas y datos cuando pierdes o te roban el celular."
-section: emergencias
+section: me-paso-algo
 level: basico
 risk: critico
 reading_time: 4

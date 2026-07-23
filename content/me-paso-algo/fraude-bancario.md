@@ -1,7 +1,7 @@
 ---
 title: "Fraude bancario — qué hacer y cómo denunciar"
 description: "Qué hacer si hicieron transacciones en tu banco que no autorizaste. Pasos, denuncia y tus derechos en Chile."
-section: emergencias
+section: me-paso-algo
 level: basico
 risk: critico
 reading_time: 6

@@ -1,7 +1,7 @@
 ---
 title: "Qué es la seguridad digital"
 description: "Una explicación simple de qué significa protegerte en internet y por qué te importa aunque no seas técnico."
-section: empezar
+section: aprender
 level: basico
 risk: bajo
 reading_time: 4

@@ -1,7 +1,7 @@
 ---
 title: "Qué hacer si me hackearon una cuenta"
 description: "Identifica qué cuenta te robaron y sigue los pasos para recuperarla."
-section: emergencias
+section: me-paso-algo
 level: basico
 risk: critico
 reading_time: 3

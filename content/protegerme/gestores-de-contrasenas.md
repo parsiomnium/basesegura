@@ -1,7 +1,7 @@
 ---
 title: "Qué es un gestor de contraseñas"
 description: "Un programa que recuerda todas tus contraseñas por ti. Solo necesitas memorizar una."
-section: cuentas
+section: protegerme
 level: basico
 risk: medio
 reading_time: 5

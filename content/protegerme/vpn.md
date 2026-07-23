@@ -1,7 +1,7 @@
 ---
 title: "Qué es una VPN y para qué sirve"
 description: "Qué hace una VPN, cuándo usarla y cuándo no la necesitas."
-section: navegacion
+section: protegerme
 level: basico
 risk: bajo
 reading_time: 3
