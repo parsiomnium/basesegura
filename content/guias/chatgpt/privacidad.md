@@ -38,19 +38,19 @@ Si usas la versión gratuita o Plus, el entrenamiento está activado a menos que
 
 En el navegador o en la app, haz clic en tu foto de perfil o iniciales (esquina superior derecha en web, o esquina inferior izquierda en la app).
 
-![Menú de perfil — opción Configuración](/img/guias/chatgpt/ir a configuracion.png)
+![Menú de perfil — opción Configuración](/img/guias/chatgpt/ir-a-configuracion.png)
 
 ### Paso 2: Ve a "Controles de datos"
 
 En el menú de configuración, busca la sección **"Data Controls"** o **"Controles de datos"** (depende del idioma que tengas configurado).
 
-![Sección de Controles de datos](/img/guias/chatgpt/controles de datos.png)
+![Sección de Controles de datos](/img/guias/chatgpt/controles-de-datos.png)
 
 ### Paso 3: Desactiva "Mejorar el modelo para todos"
 
 Busca la opción que dice **"Improve the model for everyone"** (o "Mejorar el modelo para todos" en español). Desactiva el interruptor.
 
-![Toggle para desactivar mejora del modelo](/img/guias/chatgpt/desactivar mejora el modelo para todos.png)
+![Toggle para desactivar mejora del modelo](/img/guias/chatgpt/desactivar-mejora-modelo.png)
 
 **Listo.** A partir de ahora, tus nuevas conversaciones no se usarán para entrenar el modelo. Tu historial sigue funcionando normal — puedes ver y continuar conversaciones anteriores.
 
