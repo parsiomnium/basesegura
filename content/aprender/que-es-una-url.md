@@ -23,7 +23,7 @@ Una URL es la dirección de un sitio web — lo que aparece en la barra de arrib
 
 Tomemos este ejemplo:
 
-`https://www.bancochile.cl/personas/cuentas`
+`https://www.bancoestado.cl/personas/cuentas`
 
 Cada parte significa algo:
 
@@ -31,7 +31,7 @@ Cada parte significa algo:
 |-------|---------|--------|
 | Protocolo | `https://` | Cómo se conecta tu navegador al sitio. Si dice `https` la conexión va cifrada. Si dice `http` (sin la s) no lo está. |
 | Subdominio | `www` | Un prefijo opcional. `www` es el más común. Algunos sitios usan otros como `mail.google.com` o `sitiospublicos.bancochile.cl`. |
-| Dominio | `bancochile.cl` | El nombre real del sitio. Es lo más importante de toda la URL. |
+| Dominio | `bancoestado.cl` | El nombre real del sitio. Es lo más importante de toda la URL. |
 | Ruta (path) | `/personas/cuentas` | La página específica dentro del sitio. Como el número de departamento dentro de un edificio. |
 
 ---
