@@ -41,15 +41,11 @@ Google ofrece varias opciones de segundo factor:
 
 ## Paso 3: Configura Authenticator (recomendado)
 
-Si eliges la app de autenticación, Google te mostrará un código QR:
-
-![App Authenticator — escanea el QR](/img/guias/gmail/app-autenticator-generar-qr.png)
+Si eliges la app de autenticación, Google te mostrará un código QR en pantalla.
 
 1. Abre tu app de autenticación (Google Authenticator, Microsoft Authenticator, o cualquier otra)
-2. Escanea el código QR
-3. Ingresa el código de 6 dígitos que aparece en la app
-
-![QR de MFA para vincular la aplicación](/img/guias/gmail/qr-mfa-aplicacion.png)
+2. Escanea el código QR que aparece en pantalla
+3. Ingresa el código de 6 dígitos que genera la app
 
 ---
 

@@ -35,13 +35,11 @@ Aquí verás:
 
 ### Paso 2: Activa "Authenticator app"
 
-En la sección de Autenticación multifactor, activa el toggle de **Authenticator app**. ChatGPT te mostrará un código QR:
-
-![Código QR para conectar la aplicación de autenticación](/img/guias/chatgpt/seguridad-mfa-qr.png)
+En la sección de Autenticación multifactor, activa el toggle de **Authenticator app**. ChatGPT te mostrará un código QR en pantalla.
 
 1. Abre tu app de autenticación (Google Authenticator, Microsoft Authenticator, o cualquier otra)
-2. Escanea el código QR con la app
-3. Ingresa el código de 6 dígitos que aparece en la app
+2. Escanea el código QR que aparece en pantalla
+3. Ingresa el código de 6 dígitos que genera la app
 4. Haz clic en **Verificar**
 
 A partir de ahora, cada vez que inicies sesión te pedirá el código de tu app además de la contraseña.
