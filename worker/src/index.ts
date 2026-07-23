@@ -225,8 +225,8 @@ async function checkHttp(url: string): Promise<{ http: HttpResult | null; ssl: S
           }
         }
 
-        const originalDomain = extractDomain(url)
-        const finalDomain = extractDomain(finalUrl)
+        const originalDomain = extractRegistrableDomain(extractDomain(url))
+        const finalDomain = extractRegistrableDomain(extractDomain(finalUrl))
 
         return {
           http: {
@@ -247,15 +247,15 @@ async function checkHttp(url: string): Promise<{ http: HttpResult | null; ssl: S
     }
 
     // Too many redirects
-    const originalDomain = extractDomain(url)
-    const lastDomain = extractDomain(currentUrl)
+    const originalDomain2 = extractRegistrableDomain(extractDomain(url))
+    const lastDomain = extractRegistrableDomain(extractDomain(currentUrl))
     return {
       http: null,
       ssl: null,
       redirects: {
         redirected: true,
         chain,
-        finalDomain: lastDomain !== originalDomain ? lastDomain : null,
+        finalDomain: lastDomain !== originalDomain2 ? lastDomain : null,
       },
     }
   } catch {

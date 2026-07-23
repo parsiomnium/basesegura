@@ -62,6 +62,19 @@ function Card({ status, title, detail }: { status: 'green' | 'yellow' | 'red' | 
   )
 }
 
+function httpStatusLabel(code: number): string {
+  if (code >= 200 && code < 300) return 'El sitio responde correctamente'
+  if (code === 301 || code === 302) return 'El sitio redirige a otra dirección'
+  if (code === 403) return 'El sitio bloquea el acceso (puede ser protección contra bots)'
+  if (code === 404) return 'La página específica no existe en este sitio'
+  if (code === 429) return 'El sitio existe pero limitó la consulta (protección contra tráfico excesivo)'
+  if (code === 500) return 'El sitio tiene un error interno'
+  if (code === 503) return 'El sitio está temporalmente fuera de servicio'
+  if (code >= 400 && code < 500) return `El sitio respondió con un error (código ${code})`
+  if (code >= 500) return `El sitio tiene problemas internos (código ${code})`
+  return `Responde con código ${code}`
+}
+
 export default function VerificarSitioPage() {
   const [url, setUrl] = useState('')
   const [loading, setLoading] = useState(false)
@@ -169,9 +182,9 @@ export default function VerificarSitioPage() {
             {/* HTTP */}
             {result.http && (
               <Card
-                status={result.http.statusCode >= 200 && result.http.statusCode < 400 ? 'green' : 'yellow'}
+                status={result.http.statusCode >= 200 && result.http.statusCode < 400 ? 'green' : result.http.statusCode === 429 || result.http.statusCode === 403 ? 'green' : 'yellow'}
                 title="Respuesta del servidor"
-                detail={`Responde con código ${result.http.statusCode}${result.http.hasHSTS ? ' · Usa HSTS (fuerza HTTPS)' : ''}${result.http.hasCSP ? ' · Tiene política de seguridad de contenido' : ''}`}
+                detail={`${httpStatusLabel(result.http.statusCode)}${result.http.hasHSTS ? ' · Fuerza conexión segura (HSTS)' : ''}${result.http.hasCSP ? ' · Tiene política de seguridad de contenido' : ''}`}
               />
             )}
 
@@ -205,15 +218,21 @@ export default function VerificarSitioPage() {
             )}
 
             {/* Age */}
-            {result.age && (
+            {result.age && result.age.ageMonths !== null && (
               <Card
                 status={
-                  result.age.ageMonths === null ? 'gray' :
                   result.age.ageMonths < 1 ? 'red' :
                   result.age.ageMonths < 3 ? 'yellow' : 'green'
                 }
                 title="Antigüedad del dominio"
-                detail={result.age.ageLabel + (result.age.expiresDate ? ` · Expira: ${result.age.expiresDate}` : '')}
+                detail={result.age.ageLabel + (result.age.expiresDate ? ` · Pagado hasta: ${result.age.expiresDate}` : '')}
+              />
+            )}
+            {result.age && result.age.ageMonths === null && result.dns.resolves && (
+              <Card
+                status="gray"
+                title="Antigüedad del dominio"
+                detail="No se pudo obtener la fecha de registro. Algunos dominios grandes no publican esta información."
               />
             )}
 
@@ -240,7 +259,7 @@ export default function VerificarSitioPage() {
             />
 
             {/* Redirects */}
-            {result.redirects.redirected && (
+            {result.redirects.redirected && result.redirects.finalDomain && (
               <Card
                 status="yellow"
                 title="Redirección detectada"
