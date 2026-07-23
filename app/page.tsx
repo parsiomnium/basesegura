@@ -96,6 +96,9 @@ export default function Home() {
         <div className="mt-4">
           <h3 className="text-sm font-semibold text-[var(--text-secondary)] mb-2">Practica</h3>
           <div className="flex flex-wrap gap-2">
+            <Link href="/herramientas/verificar-sitio" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
+              Verificador de sitios
+            </Link>
             <span className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm text-[var(--text-secondary)]">
               Simulador de phishing (pronto)
             </span>
