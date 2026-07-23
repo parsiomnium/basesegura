@@ -94,7 +94,7 @@ Base Segura es un proyecto personal de código abierto. El contenido y el códig
 
 - Código: licencia MIT
 - Contenido: licencia CC BY-SA 4.0 (puedes usar, compartir y adaptar con atribución)
-- [Contribuir en GitHub →](https://github.com/JazminTrujilloEyzaguirre/basesegura)
+- [Contribuir en GitHub →](https://github.com/parsiomnium/basesegura)
 
 ---
 

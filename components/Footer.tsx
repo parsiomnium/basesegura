@@ -6,7 +6,7 @@ export function Footer() {
         <div className="flex gap-4">
           <a href="/sobre" className="hover:text-[var(--accent)]">Sobre</a>
           <a
-            href="https://github.com/JazminTrujilloEyzaguirre/basesegura"
+            href="https://github.com/parsiomnium/basesegura"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[var(--accent)]"

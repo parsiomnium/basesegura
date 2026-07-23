@@ -17,7 +17,7 @@ export function Header() {
             Sobre
           </Link>
           <a
-            href="https://github.com/JazminTrujilloEyzaguirre/basesegura"
+            href="https://github.com/parsiomnium/basesegura"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[var(--accent)]"
