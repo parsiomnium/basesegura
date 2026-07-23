@@ -225,7 +225,7 @@ export default function VerificarSitioPage() {
                 detail={`Este dominio se parece mucho a ${result.typosquatting.matchedDomain} — verifica que sea el correcto.`}
               />
             )}
-            {!result.typosquatting.similar && (
+            {!result.typosquatting.similar && !result.brandInSubdomain.detected && (
               <Card
                 status="green"
                 title="Nombre del dominio"
