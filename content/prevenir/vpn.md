@@ -45,14 +45,14 @@ Hay mucha publicidad mentirosa sobre las VPN:
 
 ## Si decides usar una
 
-Recomendamos **Proton VPN** — es confiable, fácil de usar, y tiene un plan gratis para probar:
+Recomiendo **Proton VPN** — es confiable, fácil de usar, y tiene un plan gratis para probar:
 
 | Plan | Costo | Qué incluye |
 |------|-------|-------------|
 | Gratis | $0 | Funciona bien para uso básico. Servidores limitados, velocidad reducida |
 | Plus | ~$4/mes (plan anual) | Servidores en más de 100 países, velocidad completa, sin límites |
 
-Si puedes pagar el plan Plus, es la opción que recomendamos — funciona mejor y financia un servicio que no vende tus datos.
+Si puedes pagar el plan Plus, es la opción que recomiendo — funciona mejor y financia un servicio que no vende tus datos.
 
 Guía de instalación: [Proton VPN](/guias/proton-vpn/instalar-y-configurar)
 

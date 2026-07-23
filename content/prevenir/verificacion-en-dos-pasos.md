@@ -38,7 +38,7 @@ En casi todas las aplicaciones el proceso es el mismo:
 3. Busca "Verificación en dos pasos" o "Autenticación en dos pasos"
 4. Actívala y sigue los pasos que te pida (normalmente es confirmar con tu número de teléfono o crear un PIN)
 
-Si no lo encuentras o necesitas ayuda visual paso a paso, tenemos guías con capturas para cada plataforma:
+Si no lo encuentras o necesitas ayuda visual paso a paso, hay guías con capturas para cada plataforma:
 
 - [WhatsApp](/guias/whatsapp#verificacion-en-dos-pasos)
 - [Gmail](/guias/gmail#verificacion-en-dos-pasos)

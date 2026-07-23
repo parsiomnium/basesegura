@@ -16,7 +16,7 @@ status: published
 
 VirusTotal es una herramienta gratuita de Google que analiza cualquier dirección web contra más de 70 motores de seguridad al mismo tiempo. Es como preguntarle a 70 expertos si un sitio es peligroso — en segundos.
 
-Está en inglés, pero lo que necesitas leer es mínimo. Aquí te explicamos paso a paso.
+Está en inglés, pero lo que necesitas leer es mínimo. Aquí te explico paso a paso.
 
 ---
 

@@ -41,7 +41,7 @@ Ejemplos:
 
 ### Paso 3: Presiona Enter
 
-El resultado aparece en unos segundos. Vas a ver mucha información — no necesitas entender todo. Solo busca los campos que explicamos abajo.
+El resultado aparece en unos segundos. Vas a ver mucha información — no necesitas entender todo. Solo busca los campos que explico abajo.
 
 ---
 

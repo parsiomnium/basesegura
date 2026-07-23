@@ -58,7 +58,7 @@ Cada artículo sigue las mismas reglas:
 
 - **Sin jerga.** Si mi mamá no lo entiende, se reescribe.
 - **Sin miedo.** No vendemos paranoia. La seguridad es reducir riesgos, no eliminarlos.
-- **Sin publicidad.** No recomendamos productos porque pagan. Solo por mérito.
+- **Sin publicidad.** No recomiendo productos porque pagan. Solo por mérito.
 - **Accionable.** Cada artículo termina con cosas que puedes hacer ahora.
 - **Atemporal.** El contenido debe seguir siendo útil dentro de cinco años.
 - **Sin promesas absolutas.** Nada es 100% seguro. En ciberseguridad se trabaja para reducir riesgos, no para eliminarlos. Los métodos evolucionan — lo que funciona hoy puede no ser suficiente mañana. Duda siempre por precaución.

@@ -106,21 +106,21 @@ Los sitios falsos viven poco — se crean, estafan y desaparecen. Un dominio reg
 - Busca "Creation Date" o "Registered On"
 - Si tiene menos de unos meses, desconfía — especialmente si te pide datos personales o pagos
 
-No sabes cómo leer los resultados? Tenemos una [guía paso a paso para usar WHOIS](/guias/whois/como-usarla).
+¿No sabes cómo leer los resultados? Hay una [guía paso a paso para usar WHOIS](/guias/whois/como-usarla).
 
 ### 4. Usa herramientas de verificación
 
 Hay herramientas gratuitas que te permiten revisar un sitio antes de confiar en él. Las más útiles:
 
-- **Verificador de Base Segura** — nuestra herramienta. Pega una URL y te dice en español si el sitio es confiable o no, sin tecnicismos. [Verificar un sitio →](/herramientas/verificar-sitio)
+- **Verificador de Base Segura** — la herramienta de este sitio. Pega una URL y te dice en español si el sitio es confiable o no, sin tecnicismos. [Verificar un sitio →](/herramientas/verificar-sitio)
 
-- **VirusTotal** — escanea contra más de 70 motores de seguridad. Está en inglés, pero tenemos una [guía de cómo usarla y leer los resultados](/guias/virustotal/como-usarla).
+- **VirusTotal** — escanea contra más de 70 motores de seguridad. Está en inglés, pero hay una [guía de cómo usarla y leer los resultados](/guias/virustotal/como-usarla).
 
 - **ScamAdviser** — da un puntaje de confianza del 1 al 100. También en inglés. [Guía para entender los resultados →](/guias/scamadviser/como-usarla)
 
 - **WHOIS (who.is)** — muestra desde cuándo existe un sitio y quién lo registró. Muy útil para detectar sitios nuevos haciéndose pasar por empresas grandes. [Guía paso a paso →](/guias/whois/como-usarla)
 
-Si no quieres aprender a usar cada herramienta por separado, usa nuestro verificador — hace esas consultas por ti y te explica todo en español.
+Si no quieres aprender a usar cada herramienta por separado, usa el verificador de Base Segura — hace esas consultas por ti y te explica todo en español.
 
 ### 5. Busca el nombre del sitio + "scam" o "estafa"
 
