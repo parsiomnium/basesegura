@@ -107,4 +107,3 @@ Es la medida más efectiva que existe para proteger una cuenta, y es gratis. Per
 [1] Microsoft (2023). Estudio sobre efectividad de MFA: 99.22% de reducción de riesgo. https://ar5iv.labs.arxiv.org/html/2305.00945
 
 ---
-

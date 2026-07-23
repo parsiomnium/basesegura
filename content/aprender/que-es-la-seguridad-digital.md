@@ -84,4 +84,3 @@ Esto no le pasa solo a empresas grandes. Le pasa a personas. Y la diferencia ent
 [2] Javelin Strategy & Research (2026). Identity Fraud Study. Citado en: https://axis-intelligence.com/identity-theft-statistics/
 
 ---
-

@@ -104,4 +104,3 @@ La mayoría de estas estafas no son técnicamente sofisticadas. Son engaños psi
 [1] Infobip (2026). WhatsApp Statistics: Global Usage & Market Overview. https://www.infobip.com/blog/whatsapp-statistics-2025-global-usage-market-overview
 
 ---
-

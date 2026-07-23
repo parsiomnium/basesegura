@@ -67,4 +67,3 @@ Guía de instalación: [Proton VPN](/guias/proton-vpn/instalar-y-configurar)
 - Tengo lo básico resuelto primero: contraseña fuerte + verificación en dos pasos
 
 ---
-

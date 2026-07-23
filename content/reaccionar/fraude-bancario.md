@@ -151,4 +151,3 @@ La denuncia penal (en Carabineros, PDI o Fiscalía) activa la investigación cri
 [4] SERNAC (2024). 19.834 reclamos por fraude bancario — aumento de 109% respecto a 2023. https://www.sernac.cl
 
 ---
-

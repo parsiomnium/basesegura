@@ -84,4 +84,3 @@ Lo que hace fuerte a una contraseña es la **longitud**, no los símbolos. Cambi
 [3] NIST SP 800-63B Rev. 4 (2025). Estándar de autenticación digital del gobierno de EE.UU. https://pages.nist.gov/800-63-4/sp800-63b.html
 
 ---
-

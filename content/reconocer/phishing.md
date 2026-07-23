@@ -103,4 +103,3 @@ No necesitas ser ingenuo para caer. Los mensajes son cada vez más convincentes 
 [3] APWG / StationX (2026). 82.6% de correos phishing muestran características de generación por IA. https://app.stationx.net/articles/phishing-statistics
 
 ---
-

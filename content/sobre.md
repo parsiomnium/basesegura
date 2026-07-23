@@ -97,4 +97,3 @@ Base Segura es un proyecto personal de código abierto. El contenido y el códig
 - [Contribuir en GitHub →](https://github.com/parsiomnium/basesegura)
 
 ---
-
