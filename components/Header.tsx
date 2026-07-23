@@ -8,10 +8,10 @@ export function Header() {
   const { toggle } = useTheme()
 
   return (
-    <header className="w-full border-b border-[var(--border)]">
+    <header className="w-full">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <Link href="/" className="hover:opacity-80" aria-label="Base Segura — Inicio">
-          <pre className="font-mono text-[4px] sm:text-[5px] md:text-[7px] leading-tight whitespace-pre bg-gradient-to-r from-[var(--accent)] to-blue-400 bg-clip-text text-transparent select-none">
+          <pre className="font-mono text-[3px] sm:text-[4px] md:text-[5px] leading-tight whitespace-pre bg-gradient-to-r from-[var(--accent)] to-blue-400 bg-clip-text text-transparent select-none">
             {LOGO_ASCII}
           </pre>
         </Link>
