@@ -9,6 +9,12 @@ updated: 2026-07-23
 
 # Este proyecto
 
+<img src="/logo.png" alt="Chuncho — mascota de Base Segura" width="96" height="96" style="image-rendering: pixelated;" />
+
+Este es el chuncho — un búho pigmeo austral, endémico de Chile. Es pequeño, silencioso y está siempre atento. Vigila de noche cuando nadie más lo hace. Por eso es la mascota de Base Segura: porque la seguridad digital es exactamente eso — estar atento cuando todo parece tranquilo.
+
+---
+
 Hice Base Segura porque no encontré lo que buscaba.
 
 Cuando intenté explicarle a mis padres cómo proteger sus cuentas, lo que existía en español era inútil para ellos: sitios de gobierno con lenguaje burocrático, portales en inglés que asumen que sabes qué es un protocolo, y artículos que venden miedo sin dar soluciones. Pensé en mis tíos, mis hermanos, mis sobrinos — todos usan internet a diario y ninguno tiene por qué saber de ciberseguridad.
