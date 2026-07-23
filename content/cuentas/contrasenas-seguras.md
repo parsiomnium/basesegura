@@ -85,4 +85,3 @@ Lo que hace fuerte a una contraseña es la **longitud**, no los símbolos. Cambi
 
 ---
 
-*Última actualización: 2026-07-22*

@@ -68,4 +68,3 @@ Guía de instalación: [Proton VPN](/guias/proton-vpn/instalar-y-configurar)
 
 ---
 
-*Última actualización: 2026-07-22*

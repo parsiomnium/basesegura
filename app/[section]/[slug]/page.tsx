@@ -30,6 +30,13 @@ export default async function ArticlePage({ params }: { params: { section: strin
     notFound()
   }
 
+  // Format date properly
+  const formatDate = (dateStr: string) => {
+    const d = new Date(dateStr)
+    if (isNaN(d.getTime())) return dateStr
+    return d.toISOString().split('T')[0]
+  }
+
   return (
     <div>
       {/* Meta */}
@@ -61,15 +68,17 @@ export default async function ArticlePage({ params }: { params: { section: strin
         </div>
       </div>
 
-      {/* Content */}
+      {/* Content — strip the first H1 since we already show the title above */}
       <article
         className="prose max-w-none"
-        dangerouslySetInnerHTML={{ __html: article.html }}
+        dangerouslySetInnerHTML={{
+          __html: article.html.replace(/<h1[^>]*>.*?<\/h1>/, '')
+        }}
       />
 
       {/* Updated */}
       <div className="mt-12 pt-4 border-t border-[var(--border)] text-sm text-[var(--text-secondary)]">
-        Última actualización: {article.updated}
+        Última actualización: {formatDate(article.updated)}
       </div>
     </div>
   )

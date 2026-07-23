@@ -108,4 +108,3 @@ Es la medida más efectiva que existe para proteger una cuenta, y es gratis. Per
 
 ---
 
-*Última actualización: 2026-07-22*

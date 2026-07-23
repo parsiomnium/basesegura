@@ -65,4 +65,3 @@ Mientras sigues los pasos de recuperación:
 
 ---
 
-*Última actualización: 2026-07-22*

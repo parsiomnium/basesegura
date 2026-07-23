@@ -54,8 +54,8 @@ export function getAllArticles(): ArticleMeta[] {
         slug: file.replace('.md', ''),
         section: section.name,
         ...data,
-        created: String(data.created),
-        updated: String(data.updated),
+        created: data.created instanceof Date ? data.created.toISOString().split('T')[0] : String(data.created),
+        updated: data.updated instanceof Date ? data.updated.toISOString().split('T')[0] : String(data.updated),
       } as ArticleMeta)
     }
   }
@@ -86,8 +86,8 @@ export async function getArticle(section: string, slug: string): Promise<Article
     slug,
     section,
     ...data,
-    created: String(data.created),
-    updated: String(data.updated),
+    created: data.created instanceof Date ? data.created.toISOString().split('T')[0] : String(data.created),
+    updated: data.updated instanceof Date ? data.updated.toISOString().split('T')[0] : String(data.updated),
     content,
     html: String(result),
   } as ArticleData

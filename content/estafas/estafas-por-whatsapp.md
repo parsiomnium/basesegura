@@ -105,4 +105,3 @@ La mayoría de estas estafas no son técnicamente sofisticadas. Son engaños psi
 
 ---
 
-*Última actualización: 2026-07-22*

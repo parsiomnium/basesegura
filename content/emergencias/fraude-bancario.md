@@ -152,4 +152,3 @@ La denuncia penal (en Carabineros, PDI o Fiscalía) activa la investigación cri
 
 ---
 
-*Última actualización: 2026-07-22*

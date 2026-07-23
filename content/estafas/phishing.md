@@ -104,4 +104,3 @@ No necesitas ser ingenuo para caer. Los mensajes son cada vez más convincentes 
 
 ---
 
-*Última actualización: 2026-07-22*

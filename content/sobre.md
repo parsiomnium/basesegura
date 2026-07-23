@@ -98,4 +98,3 @@ Base Segura es un proyecto personal de código abierto. El contenido y el códig
 
 ---
 
-*Última actualización: 2026-07-22*

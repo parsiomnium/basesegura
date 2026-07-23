@@ -85,4 +85,3 @@ Esto no le pasa solo a empresas grandes. Le pasa a personas. Y la diferencia ent
 
 ---
 
-*Última actualización: 2026-07-22*

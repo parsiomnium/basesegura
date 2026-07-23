@@ -121,4 +121,3 @@ El problema no es falta de voluntad. Es que una persona normal tiene más de 100
 
 ---
 
-*Última actualización: 2026-07-22*
