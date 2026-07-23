@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Base Segura
 
-## Getting Started
+Base de conocimiento pública y gratuita sobre seguridad digital en español.
 
-First, run the development server:
+Hecha para personas que no tienen conocimientos técnicos — padres, adultos mayores, estudiantes, trabajadores, cualquiera que use internet.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Principios
+
+- **Sin jerga.** Si no se entiende, se reescribe.
+- **Sin miedo.** No vendemos paranoia.
+- **Sin publicidad.** Solo recomendamos por mérito.
+- **Accionable.** Cada artículo termina con pasos concretos.
+- **Basado en estándares.** NIST, OWASP, CIS como fundamento técnico.
+
+## Stack
+
+- Next.js 14 (App Router, SSG)
+- Tailwind CSS
+- Markdown (contenido en `content/`)
+- Zod (validación de frontmatter)
+- Cloudflare Pages
+
+## Estructura
+
+```
+content/
+├── protegerme/       # Contraseñas, gestores, MFA, VPN
+├── cuidarme/         # Phishing, estafas por WhatsApp
+├── me-paso-algo/     # Me robaron, me hackearon, fraude bancario
+├── aprender/         # Qué es la seguridad digital
+└── sobre.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desarrollo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Validación
 
-## Learn More
+```bash
+npm run lint:content    # Lint markdown
+npm run validate        # Validar frontmatter (Zod)
+npm run build           # Build completo
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Contribuir
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Abre un issue con tu propuesta (título, sección, qué pregunta responde)
+2. Fork → branch → PR contra `main`
+3. CI valida automáticamente (lint + schema + build)
+4. Review y merge
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Ver más en [CONTRIBUTING.md](CONTRIBUTING.md) (pronto).
 
-## Deploy on Vercel
+## Licencias
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Código: MIT
+- Contenido: CC BY-SA 4.0
