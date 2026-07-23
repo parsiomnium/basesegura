@@ -27,7 +27,7 @@ Es la forma más directa de saber si un sitio que dice ser tu banco o una tienda
 
 Abre tu navegador y ve a [who.is](https://who.is).
 
-[captura: página principal de who.is con el campo de búsqueda]
+![Página principal de who.is](/img/guias/whois/home.png)
 
 ### Paso 2: Escribe solo el dominio
 
@@ -38,7 +38,7 @@ Ejemplos:
 - ✓ `mercadolibre.cl`
 - ✗ `https://bancosantander.cl/login` (no pongas esto)
 
-[captura: campo de búsqueda con un dominio escrito correctamente]
+![Resultado WHOIS de bci.cl mostrando los campos principales](/img/guias/whois/resultado-bci.png)
 
 ### Paso 3: Presiona Enter
 
@@ -50,7 +50,7 @@ El resultado aparece en unos segundos. Vas a ver mucha información — no neces
 
 ### Lo que importa
 
-[captura: resultado WHOIS con los campos importantes señalados con flechas]
+
 
 | Campo (en inglés) | Qué significa | Ejemplo |
 |---|---|---|
@@ -89,7 +89,7 @@ No necesitas entender estos campos:
 
 ### Sitio legítimo: `bancosantander.cl`
 
-[captura: resultado WHOIS de bancosantander.cl]
+![Resultado WHOIS de bci.cl](/img/guias/whois/resultado-bci.png)
 
 - Creation Date: `1999-XX-XX` → existe desde 1999. Un banco real.
 - Registrant: nombre del banco o entidad financiera

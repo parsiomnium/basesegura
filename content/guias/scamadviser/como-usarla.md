@@ -27,13 +27,11 @@ Es especialmente útil para tiendas online que no conoces — esas que aparecen 
 
 Abre tu navegador y ve a [scamadviser.com](https://www.scamadviser.com/).
 
-[captura: página principal de ScamAdviser con el buscador central]
+![Página principal de ScamAdviser con el buscador central](/img/guias/scamadviser/home.png)
 
 ### Paso 2: Pega la dirección del sitio
 
 Copia la dirección del sitio que quieres verificar y pégala en el buscador central. Presiona Enter.
-
-[captura: buscador con una URL pegada]
 
 ### Paso 3: Espera el resultado
 
@@ -47,7 +45,7 @@ ScamAdviser tarda unos segundos en analizar el sitio. Luego te muestra una pági
 
 Lo primero que ves es un número grande con un color:
 
-[captura: trust score mostrando un número con su color]
+![Resultado de ScamAdviser mostrando trust score y highlights](/img/guias/scamadviser/resultado-1.png)
 
 | Puntaje | Color | Qué significa |
 |---|---|---|
@@ -62,7 +60,7 @@ Debajo del puntaje hay dos secciones clave:
 
 **"Positive Highlights"** (puntos a favor):
 
-[captura: sección de highlights positivos]
+![Sección de highlights en ScamAdviser](/img/guias/scamadviser/resultado-2.png)
 
 Aquí las frases más comunes y qué significan:
 
@@ -74,8 +72,6 @@ Aquí las frases más comunes y qué significan:
 | "Positive reviews found" | Otros usuarios dejaron opiniones buenas |
 
 **"Negative Highlights"** (señales de alerta):
-
-[captura: sección de highlights negativos]
 
 | Lo que dice (en inglés) | Qué significa |
 |---|---|

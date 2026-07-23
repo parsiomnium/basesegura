@@ -27,7 +27,7 @@ Está en inglés, pero lo que necesitas leer es mínimo. Aquí te explico paso a
 
 Abre tu navegador y ve a [virustotal.com](https://www.virustotal.com/).
 
-[captura: página principal de VirusTotal mostrando las tres pestañas: FILE, URL, SEARCH]
+![Página principal de VirusTotal con las pestañas FILE, URL y SEARCH](/img/guias/virustotal/home.png)
 
 ### Paso 2: Selecciona la pestaña "URL"
 
@@ -36,8 +36,6 @@ Arriba vas a ver tres pestañas: FILE, URL, SEARCH. Haz clic en **URL**.
 ### Paso 3: Pega la dirección que quieres verificar
 
 Copia la dirección completa del sitio sospechoso (desde la barra de tu navegador) y pégala en el campo de texto. Presiona Enter o el botón de búsqueda.
-
-[captura: campo de texto con una URL pegada, botón de búsqueda visible]
 
 ### Paso 4: Espera unos segundos
 
@@ -51,9 +49,9 @@ VirusTotal va a analizar la URL contra todos sus motores. Tarda entre 5 y 30 seg
 
 Lo más importante es el número grande que aparece arriba:
 
-[captura: resultado mostrando "0 / 72 security vendors flagged this URL as malicious"]
+![Resultado de VirusTotal mostrando 0/92 — ningún motor detectó amenazas](/img/guias/virustotal/resultado-1.png)
 
-Eso se lee así: **"0 de 72 motores de seguridad marcaron esta URL como maliciosa"**.
+Eso se lee así: **"0 de 92 motores de seguridad marcaron esta URL como maliciosa"**.
 
 - El primer número → cuántos motores lo marcaron como peligroso
 - El segundo número → cuántos motores lo analizaron en total
@@ -70,7 +68,7 @@ Eso se lee así: **"0 de 72 motores de seguridad marcaron esta URL como malicios
 
 Debajo del número principal verás una lista de todos los motores y su veredicto:
 
-[captura: lista de motores con colores verde, gris y rojo]
+![Lista de motores de seguridad — todos en verde diciendo "Clean"](/img/guias/virustotal/resultado-2.png)
 
 - **Verde** ("Clean" o "Harmless") → ese motor dice que está bien
 - **Gris** ("Undetected") → ese motor no tiene opinión (ni bueno ni malo)
@@ -79,20 +77,26 @@ Debajo del número principal verás una lista de todos los motores y su veredict
 ### La pestaña "Details"
 
 Si haces clic en "Details", verás información extra:
-- **Final URL** → a veces un sitio te redirige a otro. Aquí ves a dónde te lleva realmente
-- **Title** → el título de la página. Si dice ser tu banco pero el título es genérico o raro, es sospechoso
 
-No necesitas entender el resto — con el número principal y los colores tienes suficiente.
+![Pestaña Details mostrando URL final, dominio, IP y fecha de primer análisis](/img/guias/virustotal/resultado-3.png)
+
+- **Final URL** → a veces un sitio te redirige a otro. Aquí ves a dónde te lleva realmente
+- **Domain** → el dominio que se analizó
+- **Serving IP** → la dirección del servidor (y en qué país está)
+- **First Submission** → desde cuándo se conoce este sitio en VirusTotal
+- **Category** → en qué categoría lo clasifican (servicios financieros, entretenimiento, etc.)
+
+No necesitas entender todo — con el número principal, los colores y la URL final tienes suficiente.
 
 ---
 
 ## Ejemplo real
 
-Si verificas `bancosantander.cl`:
-- Resultado esperado: **0 / 72** — todo verde. Es el sitio real de un banco grande.
+Si verificas `scotiabankchile.cl`:
+- Resultado esperado: **0 / 92** — todo verde. Es el sitio real de un banco.
 
 Si verificas un sitio sospechoso que te llegó por SMS:
-- Resultado posible: **8 / 72** — varios motores en rojo diciendo "Phishing". No entres.
+- Resultado posible: **8 / 92** — varios motores en rojo diciendo "Phishing". No entres.
 
 ---
 
