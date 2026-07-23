@@ -31,7 +31,7 @@ export default function Home() {
     <div className="space-y-16">
       {/* Hero */}
       <section className="pt-8">
-        <h1 className="text-2xl md:text-3xl font-light leading-relaxed">
+        <h1 className="text-3xl md:text-4xl font-semibold leading-snug">
           Seguridad digital para todas las personas.
         </h1>
       </section>
