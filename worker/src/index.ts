@@ -154,6 +154,20 @@ function levenshtein(a: string, b: string): number {
 // --- Detection functions ---
 
 async function checkDns(domain: string): Promise<DnsResult> {
+  // Try the domain as-is first
+  const result = await dnsLookup(domain)
+  if (result.resolves) return result
+
+  // If bare domain doesn't resolve, try www.
+  if (!domain.startsWith('www.')) {
+    const wwwResult = await dnsLookup(`www.${domain}`)
+    if (wwwResult.resolves) return wwwResult
+  }
+
+  return { resolves: false, ip: null }
+}
+
+async function dnsLookup(domain: string): Promise<DnsResult> {
   try {
     const res = await fetch(`https://cloudflare-dns.com/dns-query?name=${domain}&type=A`, {
       headers: { 'Accept': 'application/dns-json' },
@@ -317,6 +331,10 @@ function checkTyposquatting(registrableDomain: string): TyposquattingResult {
 
   for (const known of KNOWN_DOMAINS) {
     const knownBase = known.replace(/\.[^.]+(\.[^.]+)?$/, '')
+
+    // Skip comparison if either domain base is 4 chars or less (too many false positives)
+    if (domainBase.length <= 4 || knownBase.length <= 4) continue
+
     const distance = levenshtein(domainBase, knownBase)
     if (distance > 0 && distance <= 2) return { similar: true, matchedDomain: known, distance }
 
