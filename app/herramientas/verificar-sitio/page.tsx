@@ -22,10 +22,13 @@ interface CheckResult {
   age: AgeResult | null
   safeBrowsing: { safe: boolean; threats: string[] }
   typosquatting: { similar: boolean; matchedDomain: string | null }
+  brandInSubdomain: { detected: boolean; brand: string | null; realDomain: string | null }
+  suspiciousKeywords: { detected: boolean; keywords: string[] }
   registrant: string | null
   redirects: { redirected: boolean; chain: string[]; finalDomain: string | null }
   verdict: 'safe' | 'caution' | 'danger'
   verdictReason: string
+  confidence: string
 }
 
 const verdictConfig = {
@@ -163,7 +166,8 @@ export default function VerificarSitioPage() {
               {verdictConfig[result.verdict].emoji} {verdictConfig[result.verdict].label}
             </p>
             <p className="text-sm mt-2">{result.verdictReason}</p>
-            <p className="text-xs mt-1 opacity-70">Dominio analizado: {result.registrableDomain}{result.domain !== result.registrableDomain ? ` (subdominio: ${result.domain})` : ''}</p>
+            <p className="text-xs mt-2 opacity-70">{result.confidence}</p>
+            <p className="text-xs mt-1 opacity-60">Dominio analizado: {result.registrableDomain}{result.domain !== result.registrableDomain ? ` (subdominio: ${result.domain})` : ''}</p>
           </div>
 
           {/* Cards */}
@@ -226,6 +230,24 @@ export default function VerificarSitioPage() {
                 status="green"
                 title="Nombre del dominio"
                 detail="No se parece a ningún sitio conocido que pudiera estar siendo imitado."
+              />
+            )}
+
+            {/* Brand in subdomain */}
+            {result.brandInSubdomain.detected && (
+              <Card
+                status="red"
+                title="Marca en el dominio que no le pertenece"
+                detail={`Este sitio usa la marca "${result.brandInSubdomain.brand}" pero el dominio real es ${result.registrableDomain}, que NO pertenece a ${result.brandInSubdomain.realDomain}. Es probable que sea una imitación.`}
+              />
+            )}
+
+            {/* Suspicious keywords */}
+            {result.suspiciousKeywords.detected && (
+              <Card
+                status="yellow"
+                title="Palabras sospechosas en el dominio"
+                detail={`El dominio contiene palabras frecuentemente usadas en sitios falsos: ${result.suspiciousKeywords.keywords.join(', ')}. Esto no es prueba de estafa, pero amerita precaución.`}
               />
             )}
 
