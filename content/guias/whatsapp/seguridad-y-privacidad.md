@@ -18,6 +18,8 @@ content_type: guide
 
 WhatsApp tiene opciones de seguridad y privacidad que la mayoría de la gente nunca toca — o que activó sin saber qué hacían. Esta guía explica cada una: qué hace, por qué importa y qué recomiendo.
 
+WhatsApp ya protege tus mensajes con cifrado de extremo a extremo (nadie puede leerlos en el camino, ni siquiera WhatsApp). Pero eso no cubre todo: tu cuenta puede ser robada si no tiene verificación en dos pasos, tus respaldos en la nube pueden quedar sin protección, y tu perfil puede estar visible para desconocidos. Los estándares internacionales de seguridad recomiendan usar más de un factor para proteger cuentas \[5], cifrar los datos almacenados \[6] y minimizar la información personal expuesta \[7].
+
 Todo se configura desde **Ajustes** (el ícono de engranaje o los tres puntos arriba a la derecha → Ajustes). WhatsApp también tiene un asistente de "Revisión de privacidad" que te guía por las opciones principales — pero no las explica. Aquí sí.
 
 <img src="/img/guias/whatsapp/revision-privacidad.png" alt="Revisión de privacidad de WhatsApp" style="max-width: 280px;" />
@@ -164,3 +166,9 @@ Al activar la copia cifrada, la protección se extiende a la copia de seguridad.
 [3] WhatsApp FAQ. Cómo proteger tu dirección IP en las llamadas. https://faq.whatsapp.com/2635108359972899
 
 [4] Meta Engineering (2023). Enhancing the security of WhatsApp calls. https://engineering.fb.com/2023/11/08/security/whatsapp-calls-enhancing-security/
+
+[5] NIST SP 800-63B (2020). Digital Identity Guidelines: Authentication and Lifecycle Management — autenticación multifactor. https://pages.nist.gov/800-63-4/sp800-63b.html
+
+[6] CIS Controls v8, Control 3.11. Encrypt Sensitive Data at Rest — cifrar datos almacenados (respaldos). https://www.cisecurity.org/controls/v8
+
+[7] OWASP Top 10 Privacy Risks. P1: Web Application Vulnerabilities, P6: Collection of data not required — minimización de datos expuestos. https://owasp.org/www-project-top-10-privacy-risks/
