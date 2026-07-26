@@ -19,13 +19,16 @@ Esto evita trabajo duplicado y asegura que el contenido encaje con la dirección
 3. Haz tus cambios
 4. Abre un Pull Request contra `main`
 
+Al hacer commit, un pre-commit hook formatea automáticamente tu código con Prettier y valida el markdown. No necesitas configurar nada — funciona solo con `npm install`.
+
 El CI ejecutará automáticamente:
 
+- **Prettier** (verifica formato del código)
 - **markdownlint** sobre `content/`
 - **Validación de frontmatter** con Zod (schema estricto)
 - **Build completo** del sitio
 
-Si cualquiera de los tres falla, el PR no se puede mergear.
+Si cualquiera de los cuatro falla, el PR no se puede mergear.
 
 Después de pasar CI, un maintainer revisará: precisión técnica, tono, claridad y estructura. El merge se hace con squash.
 

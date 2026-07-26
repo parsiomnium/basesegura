@@ -42,9 +42,12 @@ npm run dev
 ## Validación
 
 ```bash
+npm run format:check    # Verificar formato (Prettier)
 npm run lint:content    # Lint markdown
 npm run validate        # Validar frontmatter (Zod)
 npm run build           # Build completo
+npm run check           # Todo junto (format + lint + validate + build)
+npm run analyze         # Bundle analysis (abre reporte visual)
 ```
 
 ## Contribuir
