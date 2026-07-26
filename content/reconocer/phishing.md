@@ -68,15 +68,6 @@ Las señales que siguen abajo te ayudan a detectar los ataques más comunes. Per
 
 ---
 
-## Qué NO hacer
-
-- No confíes en un mensaje solo porque tiene el logo de una empresa — cualquiera puede copiar un logo
-- No confíes en un mensaje solo porque sabe tu nombre — esa información está en filtraciones anteriores
-- No entregues códigos de verificación a nadie, por ningún medio. Si alguien te pide "el código que te llegó", es una estafa
-- No llames a números que vienen en mensajes sospechosos
-
----
-
 ## Ejemplos comunes
 
 **Por correo:**
@@ -100,16 +91,6 @@ En todos los casos la mecánica es la misma: urgencia + un pedido de acción.
 El phishing es el ataque más común contra personas. En 2025 se registraron 3.8 millones de ataques de phishing a nivel global [1], y fue el tipo de delito más reportado al FBI — más que la extorsión y el fraude de inversiones combinados [2].
 
 No necesitas ser ingenuo para caer. Los mensajes son cada vez más convincentes — muchos ya están generados por inteligencia artificial [3]. La diferencia entre caer y no caer es saber qué buscar.
-
----
-
-## Lista de verificación
-
-- Si no lo pedí, desconfío
-- Nunca entrego códigos de verificación a nadie
-- Antes de hacer clic, miro a dónde lleva el link
-- Si tengo dudas, verifico por otro medio (app oficial o llamada)
-- Si caí, cambio mi contraseña inmediatamente
 
 ---
 
