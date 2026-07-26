@@ -20,7 +20,7 @@ WhatsApp tiene opciones de seguridad y privacidad que la mayoría de la gente nu
 
 Todo se configura desde **Ajustes** (el ícono de engranaje o los tres puntos arriba a la derecha → Ajustes). WhatsApp también tiene un asistente de "Revisión de privacidad" que te guía por las opciones principales — pero no las explica. Aquí sí.
 
-![Revisión de privacidad de WhatsApp](/img/guias/whatsapp/revision-privacidad.png)
+<img src="/img/guias/whatsapp/revision-privacidad.png" alt="Revisión de privacidad de WhatsApp" style="max-width: 280px;" />
 
 ---
 
@@ -28,7 +28,7 @@ Todo se configura desde **Ajustes** (el ícono de engranaje o los tres puntos ar
 
 **Dónde:** Ajustes → Cuenta → Verificación en dos pasos
 
-![Sección Cuenta](/img/guias/whatsapp/cuenta.png)
+<img src="/img/guias/whatsapp/cuenta.png" alt="Sección Cuenta" style="max-width: 280px;" />
 
 **Qué es:** Un PIN de 6 dígitos que WhatsApp te pide periódicamente y cada vez que alguien intenta registrar tu número en otro teléfono. Es independiente del código SMS que te llega al instalar WhatsApp.
 
@@ -36,7 +36,7 @@ Todo se configura desde **Ajustes** (el ícono de engranaje o los tres puntos ar
 
 **Qué hacer:** Activar. Elige un PIN que no sea tu fecha de nacimiento ni 123456. Agrega un correo de recuperación por si lo olvidas.
 
-![Verificación en dos pasos](/img/guias/whatsapp/verificacion-dos-pasos.png)
+<img src="/img/guias/whatsapp/verificacion-dos-pasos.png" alt="Verificación en dos pasos" style="max-width: 280px;" />
 
 ---
 
@@ -46,7 +46,7 @@ Todo se configura desde **Ajustes** (el ícono de engranaje o los tres puntos ar
 
 Aquí controlas quién ve tu información personal. Cada opción tiene tres niveles: Todos, Mis contactos, o Nadie.
 
-![Opciones de privacidad](/img/guias/whatsapp/privacidad.png)
+<img src="/img/guias/whatsapp/privacidad.png" alt="Opciones de privacidad" style="max-width: 280px;" />
 
 ### Hora de última vez y En línea
 
@@ -100,7 +100,7 @@ Aquí está la opción de **silenciar llamadas de números desconocidos**. Las l
 
 Esta sección tiene opciones más técnicas que la mayoría de la gente no ve. Vale la pena revisarla.
 
-![Configuración avanzada de privacidad](/img/guias/whatsapp/avanzada.png)
+<img src="/img/guias/whatsapp/avanzada.png" alt="Configuración avanzada de privacidad" style="max-width: 280px;" />
 
 ### Bloquear mensajes de cuentas desconocidas
 
