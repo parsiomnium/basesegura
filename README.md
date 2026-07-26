@@ -6,9 +6,9 @@ Hecha para personas que no tienen conocimientos técnicos — padres, adultos ma
 
 ## Principios
 
-- **Sin jerga.** Si no se entiende, se reescribe.
-- **Sin miedo.** No vendemos paranoia.
-- **Sin publicidad.** Solo recomendamos por mérito.
+- **Sin jerga tecnica.** 
+- **Sin miedo.** 
+- **Sin publicidad.** 
 - **Accionable.** Cada artículo termina con pasos concretos.
 - **Basado en estándares.** NIST, OWASP, CIS como fundamento técnico.
 
@@ -24,10 +24,11 @@ Hecha para personas que no tienen conocimientos técnicos — padres, adultos ma
 
 ```
 content/
-├── protegerme/       # Contraseñas, gestores, MFA, VPN
-├── cuidarme/         # Phishing, estafas por WhatsApp
-├── me-paso-algo/     # Me robaron, me hackearon, fraude bancario
-├── aprender/         # Qué es la seguridad digital
+├── prevenir/         # Contraseñas, gestores, MFA, VPN, privacidad
+├── reconocer/        # Phishing, estafas, sitios peligrosos
+├── reaccionar/       # Me robaron, me hackearon, fraude bancario
+├── aprender/         # Seguridad digital, URLs, malware
+├── guias/            # Guías por plataforma (Gmail, ChatGPT, etc.)
 └── sobre.md
 ```
 
@@ -53,7 +54,7 @@ npm run build           # Build completo
 3. CI valida automáticamente (lint + schema + build)
 4. Review y merge
 
-Ver más en [CONTRIBUTING.md](CONTRIBUTING.md) (pronto).
+Ver más en [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licencias
 
