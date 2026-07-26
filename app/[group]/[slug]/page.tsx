@@ -105,7 +105,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
         Última actualización: {formatDate(article.updated)}
       </div>
 
-      <ContactBox />
+      {/* <ContactBox /> */}
     </div>
   )
 }
