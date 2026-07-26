@@ -1,6 +1,7 @@
 interface Env {
   SAFE_BROWSING_API_KEY: string
   ALLOWED_ORIGIN: string
+  CONTACT_TO: string
 }
 
 interface CheckResult {
@@ -494,6 +495,82 @@ function computeVerdict(result: Omit<CheckResult, 'verdict' | 'verdictReason' | 
   }
 }
 
+// --- Rate limiting (in-memory, per worker instance) ---
+
+const contactRateMap = new Map<string, { count: number; resetAt: number }>()
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now()
+  const entry = contactRateMap.get(ip)
+  if (!entry || now > entry.resetAt) {
+    contactRateMap.set(ip, { count: 1, resetAt: now + 3600000 }) // 1 hour window
+    return false
+  }
+  if (entry.count >= 3) return true // max 3 per hour
+  entry.count++
+  return false
+}
+
+// --- Contact handler ---
+
+async function handleContact(request: Request, env: Env, corsHeaders: Record<string, string>): Promise<Response> {
+  const ip = request.headers.get('cf-connecting-ip') || 'unknown'
+
+  if (isRateLimited(ip)) {
+    return Response.json(
+      { error: 'Demasiados mensajes. Intenta más tarde.' },
+      { status: 429, headers: corsHeaders },
+    )
+  }
+
+  let message: string
+  let page: string
+  try {
+    const body = (await request.json()) as { message?: string; page?: string }
+    message = (body.message || '').trim().slice(0, 500)
+    page = (body.page || '').trim().slice(0, 200)
+    if (!message) throw new Error('empty')
+  } catch {
+    return Response.json(
+      { error: 'Envía un mensaje válido' },
+      { status: 400, headers: corsHeaders },
+    )
+  }
+
+  // Send via MailChannels (free for Cloudflare Workers)
+  const email = {
+    personalizations: [{ to: [{ email: env.CONTACT_TO }] }],
+    from: { email: 'noreply@basesegura.org', name: 'Base Segura' },
+    subject: `[Contacto] Mensaje desde ${page || '/'}`,
+    content: [
+      {
+        type: 'text/plain',
+        value: `Página: ${page || 'No especificada'}\n\nMensaje:\n${message}\n\n---\nIP: ${ip}`,
+      },
+    ],
+  }
+
+  try {
+    const res = await fetch('https://api.mailchannels.net/tx/v1/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(email),
+    })
+    if (res.status === 202 || res.ok) {
+      return Response.json({ ok: true }, { headers: corsHeaders })
+    }
+    return Response.json(
+      { error: 'No se pudo enviar el mensaje' },
+      { status: 500, headers: corsHeaders },
+    )
+  } catch {
+    return Response.json(
+      { error: 'Error al enviar' },
+      { status: 500, headers: corsHeaders },
+    )
+  }
+}
+
 // --- Main handler ---
 
 export default {
@@ -513,6 +590,23 @@ export default {
       return Response.json({ error: 'Method not allowed' }, { status: 405, headers: corsHeaders })
     }
 
+    const url = new URL(request.url)
+
+    if (url.pathname === '/contact') {
+      return handleContact(request, env, corsHeaders)
+    }
+
+    if (url.pathname === '/check') {
+      return handleCheck(request, env, corsHeaders)
+    }
+
+    return Response.json({ error: 'Not found' }, { status: 404, headers: corsHeaders })
+  },
+}
+
+// --- Check handler (site verifier) ---
+
+async function handleCheck(request: Request, env: Env, corsHeaders: Record<string, string>): Promise<Response> {
     let rawInput: string
     try {
       const body = await request.json() as { url?: string }
@@ -573,5 +667,4 @@ export default {
     const result: CheckResult = { ...partialResult, verdict, verdictReason: reason, confidence }
 
     return Response.json(result, { headers: corsHeaders })
-  },
 }

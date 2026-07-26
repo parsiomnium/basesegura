@@ -3,4 +3,5 @@ main = "src/index.ts"
 compatibility_date = "2024-01-01"
 
 [vars]
-ALLOWED_ORIGIN = "https://basesegura.pages.dev"
+ALLOWED_ORIGIN = "https://basesegura.org"
+CONTACT_TO = "contacto@basesegura.org"

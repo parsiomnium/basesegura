@@ -2,6 +2,7 @@ import { getArticle, getAllArticles } from '@/lib/content'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { FreshnessBanner } from '@/components/FreshnessBanner'
+import { ContactBox } from '@/components/ContactBox'
 import { SITE_NAME, sections } from '@/lib/config'
 import type { Metadata } from 'next'
 
@@ -103,6 +104,8 @@ export default async function ArticlePage({ params }: { params: Params }) {
       <div className="mt-12 pt-4 border-t border-[var(--border)] text-sm text-[var(--text-secondary)]">
         Última actualización: {formatDate(article.updated)}
       </div>
+
+      <ContactBox />
     </div>
   )
 }

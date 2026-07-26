@@ -9,6 +9,7 @@ import rehypeStringify from 'rehype-stringify'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { SITE_NAME } from '@/lib/config'
+import { ContactBox } from '@/components/ContactBox'
 import type { Metadata } from 'next'
 
 const guidesDir = path.join(process.cwd(), 'content', 'guias')
@@ -97,6 +98,8 @@ export default async function GuiaPage({ params }: { params: Params }) {
           ? data.updated.toISOString().split('T')[0]
           : String(data.updated)}
       </div>
+
+      <ContactBox />
     </div>
   )
 }
