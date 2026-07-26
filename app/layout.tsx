@@ -4,19 +4,16 @@ import './globals.css'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { ThemeProvider } from '@/components/ThemeProvider'
+import { SITE_TITLE, SITE_DESCRIPTION } from '@/lib/config'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Base Segura — Seguridad digital para todas las personas',
-  description: 'Base de conocimiento pública y gratuita sobre seguridad digital en español. Guías simples, sin jerga, para proteger tu vida digital.',
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={`${inter.className} min-h-screen flex flex-col`}>

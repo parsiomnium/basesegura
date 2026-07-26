@@ -36,13 +36,11 @@ export interface ArticleData extends ArticleMeta {
 export function getAllArticles(): ArticleMeta[] {
   const articles: ArticleMeta[] = []
 
-  const sections = fs.readdirSync(contentDir, { withFileTypes: true })
-    .filter(d => d.isDirectory())
+  const sections = fs.readdirSync(contentDir, { withFileTypes: true }).filter(d => d.isDirectory())
 
   for (const section of sections) {
     const sectionPath = path.join(contentDir, section.name)
-    const files = fs.readdirSync(sectionPath)
-      .filter(f => f.endsWith('.md'))
+    const files = fs.readdirSync(sectionPath).filter(f => f.endsWith('.md'))
 
     for (const file of files) {
       const filePath = path.join(sectionPath, file)
@@ -55,8 +53,14 @@ export function getAllArticles(): ArticleMeta[] {
         slug: file.replace('.md', ''),
         section: section.name,
         ...data,
-        created: data.created instanceof Date ? data.created.toISOString().split('T')[0] : String(data.created),
-        updated: data.updated instanceof Date ? data.updated.toISOString().split('T')[0] : String(data.updated),
+        created:
+          data.created instanceof Date
+            ? data.created.toISOString().split('T')[0]
+            : String(data.created),
+        updated:
+          data.updated instanceof Date
+            ? data.updated.toISOString().split('T')[0]
+            : String(data.updated),
       } as ArticleMeta)
     }
   }
@@ -87,20 +91,26 @@ export async function getArticle(section: string, slug: string): Promise<Article
     slug,
     section,
     ...data,
-    created: data.created instanceof Date ? data.created.toISOString().split('T')[0] : String(data.created),
-    updated: data.updated instanceof Date ? data.updated.toISOString().split('T')[0] : String(data.updated),
+    created:
+      data.created instanceof Date
+        ? data.created.toISOString().split('T')[0]
+        : String(data.created),
+    updated:
+      data.updated instanceof Date
+        ? data.updated.toISOString().split('T')[0]
+        : String(data.updated),
     content,
     html: String(result),
   } as ArticleData
 }
 
 export function getSections(): string[] {
-  return fs.readdirSync(contentDir, { withFileTypes: true })
+  return fs
+    .readdirSync(contentDir, { withFileTypes: true })
     .filter(d => d.isDirectory())
     .map(d => d.name)
     .filter(name => {
-      const files = fs.readdirSync(path.join(contentDir, name))
-        .filter(f => f.endsWith('.md'))
+      const files = fs.readdirSync(path.join(contentDir, name)).filter(f => f.endsWith('.md'))
       return files.length > 0
     })
 }

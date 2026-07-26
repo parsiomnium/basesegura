@@ -17,7 +17,7 @@ content_type: prevent
 
 No necesitas entrar a la "deep web" para encontrarte con sitios peligrosos. Algunos de los sitios más riesgosos son los que millones de personas visitan a diario: páginas de películas gratis, sitios para descargar programas crackeados, o tiendas con ofertas que parecen demasiado buenas.
 
-Los sitios pirata tienen un riesgo de infección más de 21 veces mayor que los sitios legítimos — y en los peores casos, hasta 65 veces mayor [1][2].
+Los sitios pirata tienen un riesgo de infección más de 21 veces mayor que los sitios legítimos — y en los peores casos, hasta 65 veces mayor \[1\]\[2\].
 
 ---
 
@@ -80,6 +80,7 @@ En 2026, se detectaron más de 400.000 dispositivos infectados por malware distr
 ## Cómo te infectas (paso a paso)
 
 ### Escenario 1: Descargaste un crack
+
 1. Buscas "Photoshop gratis" en Google
 2. Llegas a un sitio que ofrece el "activador"
 3. Descargas un archivo .exe o .zip
@@ -87,6 +88,7 @@ En 2026, se detectaron más de 400.000 dispositivos infectados por malware distr
 5. Lo ejecutas. Photoshop funciona. Pero el malware ya extrajo tus contraseñas
 
 ### Escenario 2: Visitaste un sitio de streaming
+
 1. Entras a ver una película
 2. Haces clic en "reproducir" y se abren 3 ventanas emergentes
 3. Una de ellas parece un aviso de tu antivirus o de Windows: "Tu PC está en peligro, haz clic aquí"
@@ -94,6 +96,7 @@ En 2026, se detectaron más de 400.000 dispositivos infectados por malware distr
 5. El archivo se ejecuta o queda esperando a que lo abras
 
 ### Escenario 3: No hiciste nada (drive-by download)
+
 1. Visitas un sitio con publicidad de redes de anuncios de baja calidad
 2. Uno de los anuncios contiene código malicioso
 3. Tu navegador carga el anuncio (automático, no hiciste clic)

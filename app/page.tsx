@@ -1,22 +1,11 @@
 import Link from 'next/link'
+import { sections } from '@/lib/config'
 
-const groups = [
-  {
-    id: 'prevenir',
-    label: 'Prevenir',
-    description: 'Protege tus cuentas y dispositivos antes de que pase algo',
-  },
-  {
-    id: 'reconocer',
-    label: 'Reconocer',
-    description: 'Aprende a identificar estafas y mensajes falsos',
-  },
-  {
-    id: 'reaccionar',
-    label: 'Reaccionar',
-    description: 'Te robaron, te hackearon o ves algo raro — actúa rápido',
-  },
-]
+const groups = Object.entries(sections).map(([id, { label, description }]) => ({
+  id,
+  label,
+  description,
+}))
 
 const guides = [
   { label: 'ChatGPT', href: '/guias/chatgpt' },
@@ -75,20 +64,32 @@ export default function Home() {
       <section>
         <h2 className="text-lg font-semibold mb-4">Aprender</h2>
         <div className="flex flex-wrap gap-2 mb-4">
-          <Link href="/aprender/basico" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
+          <Link
+            href="/aprender/basico"
+            className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+          >
             Básico
           </Link>
-          <Link href="/aprender/intermedio" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
+          <Link
+            href="/aprender/intermedio"
+            className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+          >
             Intermedio
           </Link>
-          <Link href="/aprender/avanzado" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
+          <Link
+            href="/aprender/avanzado"
+            className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+          >
             Avanzado
           </Link>
         </div>
         <div className="mt-4">
           <h3 className="text-sm font-semibold text-[var(--text-secondary)] mb-2">Practica</h3>
           <div className="flex flex-wrap gap-2">
-            <Link href="/herramientas/verificar-sitio" className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors">
+            <Link
+              href="/herramientas/verificar-sitio"
+              className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+            >
               Verificador de sitios
             </Link>
             <span className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm text-[var(--text-secondary)]">

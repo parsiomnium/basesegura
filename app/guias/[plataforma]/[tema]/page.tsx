@@ -8,6 +8,7 @@ import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import { SITE_NAME } from '@/lib/config'
 import type { Metadata } from 'next'
 
 const guidesDir = path.join(process.cwd(), 'content', 'guias')
@@ -18,27 +19,31 @@ function getGuide(plataforma: string, tema: string) {
   return filePath
 }
 
-export async function generateMetadata({ params }: { params: { plataforma: string; tema: string } }): Promise<Metadata> {
-  const filePath = getGuide(params.plataforma, params.tema)
+type Params = Promise<{ plataforma: string; tema: string }>
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { plataforma, tema } = await params
+  const filePath = getGuide(plataforma, tema)
   if (!filePath) return {}
 
   const source = fs.readFileSync(filePath, 'utf-8')
   const { data } = matter(source)
 
   return {
-    title: `${data.title} — Base Segura`,
+    title: `${data.title} — ${SITE_NAME}`,
     description: data.description,
     openGraph: {
       title: data.title,
       description: data.description,
       type: 'article',
-      siteName: 'Base Segura',
+      siteName: SITE_NAME,
     },
   }
 }
 
-export default async function GuiaPage({ params }: { params: { plataforma: string; tema: string } }) {
-  const filePath = getGuide(params.plataforma, params.tema)
+export default async function GuiaPage({ params }: { params: Params }) {
+  const { plataforma, tema } = await params
+  const filePath = getGuide(plataforma, tema)
 
   if (!filePath) {
     notFound()
@@ -54,7 +59,7 @@ export default async function GuiaPage({ params }: { params: { plataforma: strin
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(content)
 
-  const platformLabel = params.plataforma.charAt(0).toUpperCase() + params.plataforma.slice(1)
+  const platformLabel = plataforma.charAt(0).toUpperCase() + plataforma.slice(1)
 
   return (
     <div>
@@ -82,36 +87,32 @@ export default async function GuiaPage({ params }: { params: { plataforma: strin
       <article
         className="prose max-w-none"
         dangerouslySetInnerHTML={{
-          __html: String(result).replace(/<h1[^>]*>.*?<\/h1>/, '')
+          __html: String(result).replace(/<h1[^>]*>.*?<\/h1>/, ''),
         }}
       />
 
       <div className="mt-12 pt-4 border-t border-[var(--border)] text-sm text-[var(--text-secondary)]">
-        Última actualización: {data.updated instanceof Date ? data.updated.toISOString().split('T')[0] : String(data.updated)}
+        Última actualización:{' '}
+        {data.updated instanceof Date
+          ? data.updated.toISOString().split('T')[0]
+          : String(data.updated)}
       </div>
     </div>
   )
 }
 
 export function generateStaticParams() {
-  const params: Array<{ plataforma: string; tema: string }> = []
+  if (!fs.existsSync(guidesDir)) return []
 
-  if (!fs.existsSync(guidesDir)) return params
+  const platforms = fs.readdirSync(guidesDir, { withFileTypes: true }).filter(d => d.isDirectory())
 
-  const platforms = fs.readdirSync(guidesDir, { withFileTypes: true })
-    .filter(d => d.isDirectory())
-
-  for (const platform of platforms) {
+  return platforms.flatMap(platform => {
     const platformPath = path.join(guidesDir, platform.name)
     const files = fs.readdirSync(platformPath).filter(f => f.endsWith('.md'))
 
-    for (const file of files) {
-      params.push({
-        plataforma: platform.name,
-        tema: file.replace('.md', ''),
-      })
-    }
-  }
-
-  return params
+    return files.map(file => ({
+      plataforma: platform.name,
+      tema: file.replace('.md', ''),
+    }))
+  })
 }

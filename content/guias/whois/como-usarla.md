@@ -50,8 +50,6 @@ El resultado aparece en unos segundos. Vas a ver mucha información — no neces
 
 ### Lo que importa
 
-
-
 | Campo (en inglés) | Qué significa | Ejemplo |
 |---|---|---|
 | **Creation Date** o **Created** | Cuándo se registró el dominio por primera vez | `2008-05-19` → existe desde 2008 |

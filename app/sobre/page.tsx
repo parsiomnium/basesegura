@@ -20,9 +20,6 @@ export default async function SobrePage() {
     .process(content)
 
   return (
-    <article
-      className="prose max-w-none"
-      dangerouslySetInnerHTML={{ __html: String(result) }}
-    />
+    <article className="prose max-w-none" dangerouslySetInnerHTML={{ __html: String(result) }} />
   )
 }

@@ -36,7 +36,7 @@ Hay otros sitios que hablan de seguridad. Lo que este hace distinto:
 - **Todo en español, para personas sin conocimientos técnicos.** No es una traducción de un sitio en inglés. Está pensado desde cero para hispanohablantes.
 - **Accionable primero.** Cada artículo te dice qué hacer antes de explicarte por qué. No necesitas entender el problema para resolverlo.
 - **Sin miedo.** La seguridad es reducir riesgos, no vivir asustado.
-- **Sin publicidad ni patrocinios.** 
+- **Sin publicidad ni patrocinios.**
 - **Fuentes verificables.** Cada dato tiene una referencia que puedes comprobar. Las recomendaciones se basan en los mismos estándares que usan bancos y gobiernos (NIST, OWASP, CIS).
 - **Fecha de actualización visible.** Sabes si lo que lees sigue vigente. Si un artículo lleva tiempo sin revisión, [te lo dice con un aviso claro](/vigencia).
 - **Código abierto.** El código y el contenido están públicos en GitHub. Cualquiera puede ver cómo se hizo, proponer correcciones o señalar errores.

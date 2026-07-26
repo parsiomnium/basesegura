@@ -23,18 +23,24 @@ function getGuidesForPlatform(plataforma: string) {
   })
 }
 
-export default function PlataformaPage({ params }: { params: { plataforma: string } }) {
-  const guides = getGuidesForPlatform(params.plataforma)
+type Params = Promise<{ plataforma: string }>
+
+export default async function PlataformaPage({ params }: { params: Params }) {
+  const { plataforma } = await params
+  const guides = getGuidesForPlatform(plataforma)
 
   if (!guides) {
     notFound()
   }
 
-  const platformLabel = params.plataforma.charAt(0).toUpperCase() + params.plataforma.slice(1)
+  const platformLabel = plataforma.charAt(0).toUpperCase() + plataforma.slice(1)
 
   return (
     <div>
-      <Link href="/" className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] mb-4 inline-block">
+      <Link
+        href="/"
+        className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] mb-4 inline-block"
+      >
         ← Inicio
       </Link>
       <h1 className="text-2xl font-bold mb-2">Guías — {platformLabel}</h1>
@@ -47,7 +53,7 @@ export default function PlataformaPage({ params }: { params: { plataforma: strin
           {guides.map(guide => (
             <li key={guide.slug}>
               <Link
-                href={`/guias/${params.plataforma}/${guide.slug}`}
+                href={`/guias/${plataforma}/${guide.slug}`}
                 className="block p-4 rounded-md hover:bg-[var(--bg-secondary)] transition-colors"
               >
                 <h3 className="font-semibold mb-1">{guide.title}</h3>
@@ -66,7 +72,8 @@ export default function PlataformaPage({ params }: { params: { plataforma: strin
 export function generateStaticParams() {
   if (!fs.existsSync(guidesDir)) return []
 
-  return fs.readdirSync(guidesDir, { withFileTypes: true })
+  return fs
+    .readdirSync(guidesDir, { withFileTypes: true })
     .filter(d => d.isDirectory())
     .map(d => ({ plataforma: d.name }))
 }

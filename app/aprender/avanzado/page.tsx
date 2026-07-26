@@ -6,12 +6,16 @@ export default function AvanzadoPage() {
 
   return (
     <div>
-      <Link href="/" className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] mb-4 inline-block">
+      <Link
+        href="/"
+        className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] mb-4 inline-block"
+      >
         ← Inicio
       </Link>
       <h1 className="text-2xl font-bold mb-2">Aprender — Avanzado</h1>
       <p className="text-[var(--text-secondary)] mb-8">
-        Cómo funcionan los ataques por dentro. Para quien quiere entender el sistema, no solo protegerse.
+        Cómo funcionan los ataques por dentro. Para quien quiere entender el sistema, no solo
+        protegerse.
       </p>
 
       {articles.length > 0 ? (

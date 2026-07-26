@@ -2,12 +2,11 @@ import { getArticle, getAllArticles } from '@/lib/content'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { FreshnessBanner } from '@/components/FreshnessBanner'
+import { SITE_NAME, sections } from '@/lib/config'
 import type { Metadata } from 'next'
 
 const groupLabels: Record<string, string> = {
-  prevenir: 'Prevenir',
-  reconocer: 'Reconocer',
-  reaccionar: 'Reaccionar',
+  ...Object.fromEntries(Object.entries(sections).map(([k, v]) => [k, v.label])),
   aprender: 'Aprender',
 }
 
@@ -25,24 +24,28 @@ const riskColors: Record<string, string> = {
   critico: 'bg-red-100 text-red-800',
 }
 
-export async function generateMetadata({ params }: { params: { group: string; slug: string } }): Promise<Metadata> {
-  const article = await getArticle(params.group, params.slug)
+type Params = Promise<{ group: string; slug: string }>
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { group, slug } = await params
+  const article = await getArticle(group, slug)
   if (!article) return {}
 
   return {
-    title: `${article.title} — Base Segura`,
+    title: `${article.title} — ${SITE_NAME}`,
     description: article.description,
     openGraph: {
       title: article.title,
       description: article.description,
       type: 'article',
-      siteName: 'Base Segura',
+      siteName: SITE_NAME,
     },
   }
 }
 
-export default async function ArticlePage({ params }: { params: { group: string; slug: string } }) {
-  const article = await getArticle(params.group, params.slug)
+export default async function ArticlePage({ params }: { params: Params }) {
+  const { group, slug } = await params
+  const article = await getArticle(group, slug)
 
   if (!article) {
     notFound()
@@ -54,13 +57,13 @@ export default async function ArticlePage({ params }: { params: { group: string;
     return d.toISOString().split('T')[0]
   }
 
-  const groupLabel = groupLabels[params.group] || params.group
+  const groupLabel = groupLabels[group] || group
 
   return (
     <div>
       <div className="mb-8">
         <Link
-          href={`/${params.group}`}
+          href={`/${group}`}
           className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] mb-2 inline-block"
         >
           ← {groupLabel}
@@ -79,7 +82,9 @@ export default async function ArticlePage({ params }: { params: { group: string;
             </span>
           )}
           {article.risk && (
-            <span className={`px-2 py-1 rounded ${riskColors[article.risk] || 'bg-[var(--bg-secondary)]'}`}>
+            <span
+              className={`px-2 py-1 rounded ${riskColors[article.risk] || 'bg-[var(--bg-secondary)]'}`}
+            >
               {riskLabels[article.risk] || article.risk}
             </span>
           )}
@@ -91,7 +96,7 @@ export default async function ArticlePage({ params }: { params: { group: string;
       <article
         className="prose max-w-none"
         dangerouslySetInnerHTML={{
-          __html: article.html.replace(/<h1[^>]*>.*?<\/h1>/, '')
+          __html: article.html.replace(/<h1[^>]*>.*?<\/h1>/, ''),
         }}
       />
 

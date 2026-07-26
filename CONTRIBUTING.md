@@ -20,6 +20,7 @@ Esto evita trabajo duplicado y asegura que el contenido encaje con la dirección
 4. Abre un Pull Request contra `main`
 
 El CI ejecutará automáticamente:
+
 - **markdownlint** sobre `content/`
 - **Validación de frontmatter** con Zod (schema estricto)
 - **Build completo** del sitio
@@ -40,8 +41,8 @@ Todo archivo en `content/` debe incluir al menos estos campos:
 
 ```yaml
 ---
-title: "Título del artículo"
-description: "Resumen en una o dos líneas."
+title: 'Título del artículo'
+description: 'Resumen en una o dos líneas.'
 section: prevenir | reconocer | reaccionar | aprender | guias
 created: 2026-07-22
 updated: 2026-07-22
@@ -50,17 +51,17 @@ updated: 2026-07-22
 
 Campos opcionales:
 
-| Campo | Valores posibles |
-|-------|-----------------|
-| `level` | `basico`, `intermedio`, `avanzado` |
-| `risk` | `bajo`, `medio`, `alto`, `critico` |
-| `reading_time` | número en minutos |
-| `tags` | lista de etiquetas relevantes |
-| `platforms` | `android`, `ios`, `windows`, `macos`, `linux` |
-| `related` | slugs de artículos relacionados |
-| `status` | `published`, `draft`, `needs-review` |
-| `country` | `all`, `cl`, `ar`, `mx`, `es` |
-| `content_type` | `guide`, `action`, `prevent`, `learn` |
+| Campo          | Valores posibles                              |
+| -------------- | --------------------------------------------- |
+| `level`        | `basico`, `intermedio`, `avanzado`            |
+| `risk`         | `bajo`, `medio`, `alto`, `critico`            |
+| `reading_time` | número en minutos                             |
+| `tags`         | lista de etiquetas relevantes                 |
+| `platforms`    | `android`, `ios`, `windows`, `macos`, `linux` |
+| `related`      | slugs de artículos relacionados               |
+| `status`       | `published`, `draft`, `needs-review`          |
+| `country`      | `all`, `cl`, `ar`, `mx`, `es`                 |
+| `content_type` | `guide`, `action`, `prevent`, `learn`         |
 
 ### Estructura de un artículo
 
@@ -97,6 +98,7 @@ No todos los campos aplican a todos los artículos (las guías por plataforma so
 ## Reportar errores
 
 Si encuentras un error (dato desactualizado, link roto, instrucción incorrecta), abre un issue describiendo:
+
 - Qué artículo tiene el problema
 - Qué dice actualmente
 - Qué debería decir (si lo sabes)

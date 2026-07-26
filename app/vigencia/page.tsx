@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { SITE_NAME } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Vigencia del contenido — Base Segura',
-  description: 'Cómo funciona el sistema de vigencia de los artículos de Base Segura.',
+  title: `Vigencia del contenido — ${SITE_NAME}`,
+  description: `Cómo funciona el sistema de vigencia de los artículos de ${SITE_NAME}.`,
 }
 
 export default function VigenciaPage() {
@@ -28,8 +29,10 @@ export default function VigenciaPage() {
 
       <h2>Cómo funciona</h2>
 
-      <p>Cada artículo muestra su fecha de última actualización. Dependiendo del tiempo transcurrido
-      y del tipo de contenido, puede aparecer un aviso:</p>
+      <p>
+        Cada artículo muestra su fecha de última actualización. Dependiendo del tiempo transcurrido
+        y del tipo de contenido, puede aparecer un aviso:
+      </p>
 
       <table>
         <thead>
@@ -40,16 +43,29 @@ export default function VigenciaPage() {
         </thead>
         <tbody>
           <tr>
-            <td><strong>Sin aviso</strong></td>
+            <td>
+              <strong>Sin aviso</strong>
+            </td>
             <td>El contenido ha sido revisado recientemente y está vigente.</td>
           </tr>
           <tr>
-            <td><strong>Aviso amarillo</strong></td>
-            <td>Ha pasado un tiempo desde la última revisión. La información general sigue vigente, pero algunos pasos o capturas podrían verse diferente en la versión actual de una app o servicio.</td>
+            <td>
+              <strong>Aviso amarillo</strong>
+            </td>
+            <td>
+              Ha pasado un tiempo desde la última revisión. La información general sigue vigente,
+              pero algunos pasos o capturas podrían verse diferente en la versión actual de una app
+              o servicio.
+            </td>
           </tr>
           <tr>
-            <td><strong>Aviso naranja</strong></td>
-            <td>El artículo lleva bastante tiempo sin actualización. Puede contener información obsoleta. Está en proceso de revisión.</td>
+            <td>
+              <strong>Aviso naranja</strong>
+            </td>
+            <td>
+              El artículo lleva bastante tiempo sin actualización. Puede contener información
+              obsoleta. Está en proceso de revisión.
+            </td>
           </tr>
         </tbody>
       </table>
@@ -68,22 +84,30 @@ export default function VigenciaPage() {
         </thead>
         <tbody>
           <tr>
-            <td><strong>Guías por plataforma</strong> (WhatsApp, Gmail, etc.)</td>
+            <td>
+              <strong>Guías por plataforma</strong> (WhatsApp, Gmail, etc.)
+            </td>
             <td>Las apps cambian interfaces seguido</td>
             <td>4 meses</td>
           </tr>
           <tr>
-            <td><strong>Artículos de reacción</strong> (me hackearon, me robaron)</td>
+            <td>
+              <strong>Artículos de reacción</strong> (me hackearon, me robaron)
+            </td>
             <td>Los procesos y contactos pueden cambiar</td>
             <td>6 meses</td>
           </tr>
           <tr>
-            <td><strong>Artículos de prevención</strong> (contraseñas, phishing, privacidad)</td>
+            <td>
+              <strong>Artículos de prevención</strong> (contraseñas, phishing, privacidad)
+            </td>
             <td>Los principios son estables, los detalles cambian lento</td>
             <td>9 meses</td>
           </tr>
           <tr>
-            <td><strong>Artículos educativos</strong> (qué es la seguridad digital)</td>
+            <td>
+              <strong>Artículos educativos</strong> (qué es la seguridad digital)
+            </td>
             <td>Conceptos fundamentales, cambian muy poco</td>
             <td>12 meses</td>
           </tr>
@@ -93,10 +117,14 @@ export default function VigenciaPage() {
       <h2>Compromiso</h2>
 
       <p>
-        Me comprometo a revisar cada artículo dentro de su plazo. Si ves un aviso de vigencia, significa
-        que sé que necesita revisión y está en mi lista. Si encuentras algo que ya no es correcto,
-        puedes{' '}
-        <a href="https://github.com/parsiomnium/basesegura/issues" target="_blank" rel="noopener noreferrer">
+        Me comprometo a revisar cada artículo dentro de su plazo. Si ves un aviso de vigencia,
+        significa que sé que necesita revisión y está en mi lista. Si encuentras algo que ya no es
+        correcto, puedes{' '}
+        <a
+          href="https://github.com/parsiomnium/basesegura/issues"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           abrir un issue en GitHub
         </a>{' '}
         para que lo corrija más rápido.

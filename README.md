@@ -6,9 +6,9 @@ Hecha para personas que no tienen conocimientos técnicos — padres, adultos ma
 
 ## Principios
 
-- **Sin jerga tecnica.** 
-- **Sin miedo.** 
-- **Sin publicidad.** 
+- **Sin jerga tecnica.**
+- **Sin miedo.**
+- **Sin publicidad.**
 - **Accionable.** Cada artículo termina con pasos concretos.
 - **Basado en estándares.** NIST, OWASP, CIS como fundamento técnico.
 

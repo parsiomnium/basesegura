@@ -6,7 +6,10 @@ export default function BasicoPage() {
 
   return (
     <div>
-      <Link href="/" className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] mb-4 inline-block">
+      <Link
+        href="/"
+        className="text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] mb-4 inline-block"
+      >
         ← Inicio
       </Link>
       <h1 className="text-2xl font-bold mb-2">Aprender — Básico</h1>

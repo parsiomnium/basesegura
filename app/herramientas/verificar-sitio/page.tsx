@@ -17,7 +17,12 @@ interface CheckResult {
   domain: string
   registrableDomain: string
   dns: { resolves: boolean; ip: string | null }
-  http: { statusCode: number; serverHeader: string | null; hasHSTS: boolean; hasCSP: boolean } | null
+  http: {
+    statusCode: number
+    serverHeader: string | null
+    hasHSTS: boolean
+    hasCSP: boolean
+  } | null
   ssl: { valid: boolean; matchesDomain: boolean } | null
   age: AgeResult | null
   safeBrowsing: { safe: boolean; threats: string[] }
@@ -35,21 +40,32 @@ const verdictConfig = {
   safe: {
     emoji: '🟢',
     label: 'Este sitio parece confiable',
-    color: 'bg-green-50 border-green-200 text-green-900 dark:bg-green-950/30 dark:border-green-800 dark:text-green-200',
+    color:
+      'bg-green-50 border-green-200 text-green-900 dark:bg-green-950/30 dark:border-green-800 dark:text-green-200',
   },
   caution: {
     emoji: '🟡',
     label: 'Hay algunas señales que deberías revisar',
-    color: 'bg-yellow-50 border-yellow-200 text-yellow-900 dark:bg-yellow-950/30 dark:border-yellow-800 dark:text-yellow-200',
+    color:
+      'bg-yellow-50 border-yellow-200 text-yellow-900 dark:bg-yellow-950/30 dark:border-yellow-800 dark:text-yellow-200',
   },
   danger: {
     emoji: '🔴',
     label: 'Este sitio tiene señales de alerta importantes',
-    color: 'bg-red-50 border-red-200 text-red-900 dark:bg-red-950/30 dark:border-red-800 dark:text-red-200',
+    color:
+      'bg-red-50 border-red-200 text-red-900 dark:bg-red-950/30 dark:border-red-800 dark:text-red-200',
   },
 }
 
-function Card({ status, title, detail }: { status: 'green' | 'yellow' | 'red' | 'gray'; title: string; detail: string }) {
+function Card({
+  status,
+  title,
+  detail,
+}: {
+  status: 'green' | 'yellow' | 'red' | 'gray'
+  title: string
+  detail: string
+}) {
   const colors = {
     green: 'border-l-green-500',
     yellow: 'border-l-yellow-500',
@@ -70,7 +86,8 @@ function httpStatusLabel(code: number): string {
   if (code === 301 || code === 302) return 'El sitio redirige a otra dirección'
   if (code === 403) return 'El sitio bloquea el acceso (puede ser protección contra bots)'
   if (code === 404) return 'La página específica no existe en este sitio'
-  if (code === 429) return 'El sitio existe pero limitó la consulta (protección contra tráfico excesivo)'
+  if (code === 429)
+    return 'El sitio existe pero limitó la consulta (protección contra tráfico excesivo)'
   if (code === 500) return 'El sitio tiene un error interno'
   if (code === 503) return 'El sitio está temporalmente fuera de servicio'
   if (code >= 400 && code < 500) return `El sitio respondió con un error (código ${code})`
@@ -125,7 +142,8 @@ export default function VerificarSitioPage() {
         </Link>
         <h1 className="text-2xl font-bold mb-2">Verificador de sitios</h1>
         <p className="text-[var(--text-secondary)]">
-          Pega la dirección de un sitio web y te digo qué tan confiable parece — en español, sin tecnicismos.
+          Pega la dirección de un sitio web y te digo qué tan confiable parece — en español, sin
+          tecnicismos.
         </p>
       </div>
 
@@ -134,7 +152,7 @@ export default function VerificarSitioPage() {
           <input
             type="text"
             value={url}
-            onChange={(e) => setUrl(e.target.value)}
+            onChange={e => setUrl(e.target.value)}
             placeholder="https://ejemplo.com"
             className="flex-1 px-4 py-3 rounded-md border border-[var(--border)] bg-[var(--bg)] text-[var(--text)] focus:outline-none focus:border-[var(--accent)]"
             disabled={loading}
@@ -167,7 +185,10 @@ export default function VerificarSitioPage() {
             </p>
             <p className="text-sm mt-2">{result.verdictReason}</p>
             <p className="text-xs mt-2 opacity-70">{result.confidence}</p>
-            <p className="text-xs mt-1 opacity-60">Dominio analizado: {result.registrableDomain}{result.domain !== result.registrableDomain ? ` (subdominio: ${result.domain})` : ''}</p>
+            <p className="text-xs mt-1 opacity-60">
+              Dominio analizado: {result.registrableDomain}
+              {result.domain !== result.registrableDomain ? ` (subdominio: ${result.domain})` : ''}
+            </p>
           </div>
 
           {/* Cards */}
@@ -186,7 +207,13 @@ export default function VerificarSitioPage() {
             {/* HTTP */}
             {result.http && (
               <Card
-                status={result.http.statusCode >= 200 && result.http.statusCode < 400 ? 'green' : result.http.statusCode === 429 || result.http.statusCode === 403 ? 'green' : 'yellow'}
+                status={
+                  result.http.statusCode >= 200 && result.http.statusCode < 400
+                    ? 'green'
+                    : result.http.statusCode === 429 || result.http.statusCode === 403
+                      ? 'green'
+                      : 'yellow'
+                }
                 title="Respuesta del servidor"
                 detail={httpStatusLabel(result.http.statusCode)}
               />
@@ -198,9 +225,15 @@ export default function VerificarSitioPage() {
                 status="green"
                 title="Protecciones adicionales del sitio"
                 detail={[
-                  result.http.hasHSTS ? 'Fuerza conexión segura siempre (impide que te conectes sin cifrar, incluso por error)' : '',
-                  result.http.hasCSP ? 'Tiene políticas que limitan qué contenido puede cargarse en la página (dificulta ataques)' : '',
-                ].filter(Boolean).join(' · ')}
+                  result.http.hasHSTS
+                    ? 'Fuerza conexión segura siempre (impide que te conectes sin cifrar, incluso por error)'
+                    : '',
+                  result.http.hasCSP
+                    ? 'Tiene políticas que limitan qué contenido puede cargarse en la página (dificulta ataques)'
+                    : '',
+                ]
+                  .filter(Boolean)
+                  .join(' · ')}
               />
             )}
 
@@ -255,11 +288,13 @@ export default function VerificarSitioPage() {
             {result.age && result.age.ageMonths !== null && (
               <Card
                 status={
-                  result.age.ageMonths < 1 ? 'red' :
-                  result.age.ageMonths < 3 ? 'yellow' : 'green'
+                  result.age.ageMonths < 1 ? 'red' : result.age.ageMonths < 3 ? 'yellow' : 'green'
                 }
                 title="Antigüedad del dominio"
-                detail={result.age.ageLabel + (result.age.expiresDate ? ` · Pagado hasta: ${result.age.expiresDate}` : '')}
+                detail={
+                  result.age.ageLabel +
+                  (result.age.expiresDate ? ` · Pagado hasta: ${result.age.expiresDate}` : '')
+                }
               />
             )}
             {result.age && result.age.ageMonths === null && result.dns.resolves && (
@@ -311,31 +346,56 @@ export default function VerificarSitioPage() {
 
           {/* Context note */}
           <div className="p-4 rounded-md bg-[var(--bg-secondary)] text-sm">
-            <p className="font-medium mb-1">¿Este sitio te pide contraseñas, datos personales o pagos?</p>
+            <p className="font-medium mb-1">
+              ¿Este sitio te pide contraseñas, datos personales o pagos?
+            </p>
             <p className="text-[var(--text-secondary)]">
-              Si es así, verifica con especial cuidado — cualquier señal amarilla o roja es motivo para no ingresar datos.
-              Si solo estás leyendo información, el riesgo es menor.
+              Si es así, verifica con especial cuidado — cualquier señal amarilla o roja es motivo
+              para no ingresar datos. Si solo estás leyendo información, el riesgo es menor.
             </p>
           </div>
-
         </div>
       )}
 
       {/* Always visible — disclaimer and tools */}
       <div className="text-sm text-[var(--text-secondary)] mt-8 p-4 rounded-md border border-[var(--border)]">
         <p className="mb-3 text-[var(--text)]">
-          Este verificador usa herramientas básicas de ciberseguridad y aplica los mismos criterios que explico en{' '}
-          <Link href="/reconocer/como-verificar-una-pagina" className="text-[var(--accent)] hover:underline">
+          Este verificador usa herramientas básicas de ciberseguridad y aplica los mismos criterios
+          que explico en{' '}
+          <Link
+            href="/reconocer/como-verificar-una-pagina"
+            className="text-[var(--accent)] hover:underline"
+          >
             Cómo saber si una página es la oficial
-          </Link>. Pero ninguna herramienta funciona por sí sola — no existen sitios 100% seguros.
+          </Link>
+          . Pero ninguna herramienta funciona por sí sola — no existen sitios 100% seguros.
         </p>
         <p className="mb-3">
-          Te recomiendo que no te quedes solo con esta respuesta. Estas herramientas son útiles, y te enseño exactamente cómo usarlas y cómo entender todo lo que dicen:
+          Te recomiendo que no te quedes solo con esta respuesta. Estas herramientas son útiles, y
+          te enseño exactamente cómo usarlas y cómo entender todo lo que dicen:
         </p>
         <ul className="list-disc pl-5 space-y-1">
-          <li><Link href="/guias/virustotal/como-usarla" className="text-[var(--accent)] hover:underline">Cómo usar VirusTotal</Link></li>
-          <li><Link href="/guias/scamadviser/como-usarla" className="text-[var(--accent)] hover:underline">Cómo usar ScamAdviser</Link></li>
-          <li><Link href="/guias/whois/como-usarla" className="text-[var(--accent)] hover:underline">Cómo usar WHOIS</Link></li>
+          <li>
+            <Link
+              href="/guias/virustotal/como-usarla"
+              className="text-[var(--accent)] hover:underline"
+            >
+              Cómo usar VirusTotal
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/guias/scamadviser/como-usarla"
+              className="text-[var(--accent)] hover:underline"
+            >
+              Cómo usar ScamAdviser
+            </Link>
+          </li>
+          <li>
+            <Link href="/guias/whois/como-usarla" className="text-[var(--accent)] hover:underline">
+              Cómo usar WHOIS
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
