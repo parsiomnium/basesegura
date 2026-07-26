@@ -7,7 +7,6 @@ created: 2026-07-22
 updated: 2026-07-23
 ---
 
-# Este proyecto
 
 <div style="text-align: center;">
 <img src="/logo.png" alt="Chuncho — mascota de Base Segura" width="96" height="96" style="image-rendering: pixelated; display: inline-block;" />
