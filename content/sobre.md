@@ -58,3 +58,11 @@ Un proyecto personal de código abierto.
 - [Contribuir en GitHub →](https://github.com/parsiomnium/basesegura)
 
 ---
+
+## Este sitio está vivo
+
+Base Segura no es un producto terminado. Es un sitio en construcción y corrección constante. Los artículos se revisan, se reescriben, se actualizan. Algunas páginas pueden cambiar de un día para otro. Contenido nuevo aparece cada semana.
+
+Si algo no se entiende, si falta un tema, o si encuentras un error — es parte del proceso. Estoy trabajando en ello.
+
+---
