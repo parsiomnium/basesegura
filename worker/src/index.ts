@@ -2,6 +2,7 @@ interface Env {
   SAFE_BROWSING_API_KEY: string
   ALLOWED_ORIGIN: string
   CONTACT_TO: string
+  RESEND_API_KEY: string
 }
 
 interface CheckResult {
@@ -537,26 +538,22 @@ async function handleContact(request: Request, env: Env, corsHeaders: Record<str
     )
   }
 
-  // Send via MailChannels (free for Cloudflare Workers)
-  const email = {
-    personalizations: [{ to: [{ email: env.CONTACT_TO }] }],
-    from: { email: 'noreply@basesegura.org', name: 'Base Segura' },
-    subject: `[Contacto] Mensaje desde ${page || '/'}`,
-    content: [
-      {
-        type: 'text/plain',
-        value: `Página: ${page || 'No especificada'}\n\nMensaje:\n${message}\n\n---\nIP: ${ip}`,
-      },
-    ],
-  }
-
+  // Send via Resend
   try {
-    const res = await fetch('https://api.mailchannels.net/tx/v1/send', {
+    const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(email),
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${env.RESEND_API_KEY}`,
+      },
+      body: JSON.stringify({
+        from: 'Base Segura <noreply@basesegura.org>',
+        to: [env.CONTACT_TO],
+        subject: `[Contacto] Mensaje desde ${page || '/'}`,
+        text: `Página: ${page || 'No especificada'}\n\nMensaje:\n${message}\n\n---\nIP: ${ip}`,
+      }),
     })
-    if (res.status === 202 || res.ok) {
+    if (res.ok) {
       return Response.json({ ok: true }, { headers: corsHeaders })
     }
     return Response.json(
