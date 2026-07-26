@@ -42,7 +42,7 @@ En casi todas las aplicaciones el proceso es el mismo:
 Si no lo encuentras o necesitas ayuda visual paso a paso, hay guías con capturas para cada plataforma:
 
 - [WhatsApp](/guias/whatsapp/seguridad-y-privacidad)
-- [Gmail](/guias/gmail/verificacion-en-dos-pasos)
+- [Gmail](/guias/gmail/seguridad-cuenta)
 
 ---
 

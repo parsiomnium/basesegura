@@ -25,6 +25,7 @@ Actúa rápido. Mientras más esperes, más difícil es recuperarla.
 
 | Cuenta | Guía paso a paso |
 |--------|-----------------|
+| Gmail, WhatsApp, Instagram, Facebook, Outlook | [Cómo recuperar una cuenta robada](/reaccionar/recuperar-una-cuenta) |
 | Banco | [Fraude bancario — qué hacer y cómo denunciar](/reaccionar/fraude-bancario) |
 
 ---
