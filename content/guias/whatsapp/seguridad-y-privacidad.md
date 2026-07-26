@@ -40,55 +40,40 @@ Todo se configura desde **Ajustes** (el ícono de engranaje o los tres puntos ar
 
 ---
 
-## Privacidad → Quién puede ver mi información
+## Privacidad → Quién ve tu perfil
 
 **Dónde:** Ajustes → Privacidad
 
-Aquí controlas quién ve tu información personal. Cada opción tiene tres niveles: Todos, Mis contactos, o Nadie.
+Estas opciones controlan qué información tuya es visible para desconocidos. La recomendación es la misma para todas: ponlas en "Mis contactos" o "Nadie". No hay razón para que alguien que no conoces vea tu foto, tu hora de conexión, o tus estados.
 
 <img src="/img/guias/whatsapp/privacidad.png" alt="Opciones de privacidad" style="max-width: 280px;" />
 
-### Hora de última vez y En línea
+| Opción | Recomendación | Por qué |
+|--------|---------------|---------|
+| Hora de última vez y En línea | Nadie o Mis contactos | Se usa para verificar que un número está activo antes de una estafa |
+| Foto del perfil | Mis contactos | Un estafador puede copiarla para hacerse pasar por ti |
+| Info | Mis contactos | Sin riesgo grave, pero sin razón para exponerla |
+| Enlaces | Mis contactos | — |
+| Estados | Mis contactos | — |
+| Ubicación en tiempo real | Verificar que diga "Ninguno" | Si la compartiste con alguien y ya no necesitas, desactívala |
 
-**Qué es:** Si otros pueden ver a qué hora te conectaste por última vez y si estás conectado ahora mismo.
+---
 
-**Recomendación:** "Mis contactos" o "Nadie". Si lo dejas en "Todos", cualquier número que te tenga guardado (o que te escriba) sabe cuándo estás activo. Esto se usa en estafas para verificar que un número está en uso.
+## Privacidad → Grupos
 
-### Foto del perfil
-
-**Qué es:** Quién puede ver tu foto.
-
-**Recomendación:** "Mis contactos". Si lo dejas en "Todos", un estafador puede guardar tu foto para hacerse pasar por ti con tus familiares.
-
-### Info (la frase debajo de tu nombre)
-
-**Recomendación:** "Mis contactos" o "Nadie". No aporta riesgo grave, pero no hay razón para que desconocidos la vean.
-
-### Enlaces
-
-**Qué es:** Quién puede ver si hiciste clic en un enlace que te enviaron.
-
-**Recomendación:** "Mis contactos".
-
-### Grupos
+**Dónde:** Ajustes → Privacidad → Grupos
 
 **Qué es:** Quién puede agregarte a grupos sin tu permiso.
 
 **Recomendación:** "Mis contactos". Si lo dejas en "Todos", te pueden meter a grupos de spam, estafas o contenido no deseado sin que puedas impedirlo. Con "Mis contactos", los demás te envían una invitación que puedes aceptar o rechazar.
 
-### Estados
+---
 
-**Recomendación:** Configurar quién los ve. No hay razón para compartirlos con gente que no conoces.
+## Privacidad → Silenciar llamadas de desconocidos
 
-### Ubicación en tiempo real
+**Dónde:** Ajustes → Privacidad → Llamadas
 
-**Qué es:** Muestra en qué chats estás compartiendo tu ubicación ahora mismo.
-
-**Recomendación:** Debería decir "Ninguno" la mayor parte del tiempo. Si compartiste tu ubicación con alguien y ya no necesitas que la vea, desactívala desde aquí.
-
-### Llamadas
-
-Aquí está la opción de **silenciar llamadas de números desconocidos**. Las llamadas de números que no tienes guardados no suenan — siguen apareciendo en tu lista, pero no te interrumpen.
+**Qué hace:** Las llamadas de números que no tienes guardados no suenan — siguen apareciendo en tu lista, pero no te interrumpen.
 
 **Recomendación:** Activar. Las llamadas de spam y estafa por WhatsApp son cada vez más comunes. Si alguien real te necesita y no lo tienes guardado, te dejará un mensaje.
 
@@ -156,18 +141,17 @@ Al activar la copia cifrada, la protección se extiende a la copia de seguridad.
 
 ## Resumen rápido
 
-| Opción | Dónde | Recomendación |
-|--------|-------|---------------|
-| Verificación en dos pasos | Cuenta | Activar siempre |
-| Última conexión | Privacidad | Mis contactos o Nadie |
-| Foto de perfil | Privacidad | Mis contactos |
-| Grupos | Privacidad | Mis contactos |
-| Silenciar desconocidos | Privacidad → Llamadas | Activar |
-| Bloquear mensajes masivos | Privacidad → Avanzada | Activar |
-| Proteger IP en llamadas | Privacidad → Avanzada | Activar |
-| Desactivar vistas previas | Privacidad → Avanzada | Activar |
-| Dispositivos vinculados | Dispositivos vinculados | Revisar periódicamente |
-| Copia cifrada | Chats → Copia de seguridad | Activar |
+| Opción | Recomendación |
+|--------|---------------|
+| Verificación en dos pasos | Activar siempre |
+| Visibilidad del perfil (foto, hora, info, estados) | Todo en "Mis contactos" o "Nadie" |
+| Grupos | Mis contactos |
+| Silenciar llamadas de desconocidos | Activar |
+| Bloquear mensajes masivos | Activar |
+| Proteger IP en llamadas | Activar |
+| Desactivar vistas previas de enlaces | Activar |
+| Dispositivos vinculados | Revisar periódicamente |
+| Copia cifrada | Activar |
 
 ---
 
@@ -177,4 +161,6 @@ Al activar la copia cifrada, la protección se extiende a la copia de seguridad.
 
 [2] WhatsApp Blog. End-to-End Encrypted Backups. https://blog.whatsapp.com/end-to-end-encrypted-backups-on-whatsapp
 
-[3] NordVPN (2025). Is WhatsApp Safe? Everything You Need to Know. https://nordvpn.com/blog/is-whatsapp-safe/
+[3] WhatsApp FAQ. Cómo proteger tu dirección IP en las llamadas. https://faq.whatsapp.com/2635108359972899
+
+[4] Meta Engineering (2023). Enhancing the security of WhatsApp calls. https://engineering.fb.com/2023/11/08/security/whatsapp-calls-enhancing-security/
