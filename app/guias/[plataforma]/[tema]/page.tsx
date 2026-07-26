@@ -99,7 +99,7 @@ export default async function GuiaPage({ params }: { params: Params }) {
           : String(data.updated)}
       </div>
 
-      {/* <ContactBox /> */}
+      <ContactBox />
     </div>
   )
 }
