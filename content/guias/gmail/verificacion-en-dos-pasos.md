@@ -61,4 +61,10 @@ Si eliges la app de autenticación, Google te mostrará un código QR en pantall
 
 [1] Google. Verificación en 2 pasos. https://support.google.com/accounts/answer/185839
 
+[2] NIST SP 800-63B (2024). Digital Identity Guidelines: Authentication and Lifecycle Management — estándar de autenticación digital que recomienda MFA para proteger cuentas con información sensible. https://pages.nist.gov/800-63-4/sp800-63b.html
+
+[3] CIS Controls v8, Control 6.3. Require MFA for Externally-Exposed Applications — exigir autenticación multifactor en servicios accesibles desde internet. https://www.cisecurity.org/controls/v8
+
+[4] CIS Controls v8, Control 6.5. Require MFA for Administrative Access — proteger con MFA las cuentas que dan acceso a otros servicios (como el correo principal). https://www.cisecurity.org/controls/v8
+
 ---

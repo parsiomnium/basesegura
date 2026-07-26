@@ -78,3 +78,13 @@ Esto agrega filtros adicionales para limitar ciertos tipos de contenido. Útil s
 | Protección de contenido | Configuración → Protección |
 
 ---
+
+## Fuentes
+
+[1] NIST SP 800-63B (2024). Digital Identity Guidelines: Authentication and Lifecycle Management — autenticación multifactor como protección contra acceso no autorizado. https://pages.nist.gov/800-63-4/sp800-63b.html
+
+[2] CIS Controls v8, Control 6.3. Require MFA for Externally-Exposed Applications — exigir MFA en aplicaciones accesibles desde internet. https://www.cisecurity.org/controls/v8
+
+[3] CIS Controls v8, Control 6.5. Require MFA for Administrative Access — aplicar MFA en cuentas con acceso a datos sensibles. https://www.cisecurity.org/controls/v8
+
+---

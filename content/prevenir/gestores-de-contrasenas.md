@@ -69,14 +69,6 @@ Cada vez que cambies una contraseña o crees una cuenta nueva, usa el botón de 
 
 ---
 
-## Qué NO hacer
-
-- No guardes tu contraseña principal en el celular ni en la propia aplicación — si la olvidas, la necesitas tener en papel en un lugar seguro
-- No le des tu contraseña principal a nadie
-- No ignores cuando la aplicación te pida actualizarse
-
----
-
 ## Preguntas comunes
 
 ### ¿Y si hackean al gestor?
@@ -98,17 +90,6 @@ Es más seguro que lo que probablemente haces hoy — repetir la misma contrase�
 Solo el 36% de los adultos usa un gestor de contraseñas [2]. El resto depende de su memoria, repite contraseñas, o las guarda en lugares inseguros.
 
 El problema no es falta de voluntad. Es que una persona normal tiene más de 100 cuentas [3]. Nadie puede recordar 100 contraseñas diferentes y fuertes. Un gestor resuelve eso.
-
----
-
-## Lista de verificación
-
-- Elegí un gestor de contraseñas
-- Creé una contraseña principal larga que no uso en otro lado
-- Migré mi correo principal
-- Migré mi banco
-- Guardé mi código de emergencia en papel
-- Las contraseñas nuevas las genera el gestor, no yo
 
 ---
 

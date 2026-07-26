@@ -65,19 +65,10 @@ Te llega un mensaje ofreciendo trabajo fácil con buen sueldo: dar "likes" en vi
 
 ---
 
-## Qué NO hacer
-
-- No abras links que te llegan de números desconocidos
-- No te unas a grupos donde no conoces a nadie
-- No reenvíes mensajes de "premios" o "alertas" a tus contactos — estás ayudando al estafador
-- No creas que porque alguien sabe tu nombre, es alguien real — esa información es fácil de conseguir
-
----
-
 ## Cómo protegerte antes de que pase
 
 - Activa la verificación en dos pasos en WhatsApp — así aunque alguien consiga tu código SMS, necesita además tu PIN para robar tu cuenta. Ver: [Verificación en dos pasos](/prevenir/verificacion-en-dos-pasos)
-- Configura quién puede agregarte a grupos: solo tus contactos. Ver: [WhatsApp](/guias/whatsapp#privacidad)
+- Configura quién puede agregarte a grupos: solo tus contactos. Ver: [WhatsApp — seguridad y privacidad](/guias/whatsapp/seguridad-y-privacidad)
 - Oculta tu foto de perfil a desconocidos — la usan para hacerse pasar por ti con otros
 
 ---
@@ -87,16 +78,6 @@ Te llega un mensaje ofreciendo trabajo fácil con buen sueldo: dar "likes" en vi
 WhatsApp tiene más de 3.300 millones de usuarios [1]. En América Latina es la app de comunicación principal — muchas personas la usan para todo, incluyendo bancos y trámites. Eso la convierte en el canal perfecto para estafas, porque la gente confía en lo que recibe ahí más que en un correo.
 
 La mayoría de estas estafas no son técnicamente sofisticadas. Son engaños psicológicos: urgencia, confianza, miedo. Saber reconocerlos es la mejor protección.
-
----
-
-## Lista de verificación
-
-- Tengo la verificación en dos pasos activa en WhatsApp
-- Solo mis contactos pueden agregarme a grupos
-- Nunca comparto códigos de verificación con nadie
-- Si un "familiar" me pide dinero desde un número nuevo, llamo al número viejo primero
-- Si no participé en un sorteo, no gané nada
 
 ---
 

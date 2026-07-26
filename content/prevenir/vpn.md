@@ -55,16 +55,8 @@ Recomiendo **Proton VPN** — es confiable, fácil de usar, y tiene un plan grat
 
 Si puedes pagar el plan Plus, es la opción que recomiendo — funciona mejor y financia un servicio que no vende tus datos.
 
-Guía de instalación: [Proton VPN](/guias/proton-vpn/instalar-y-configurar)
+Guía de configuración: [Proton VPN — ajustes de seguridad](/guias/proton-vpn/ajustes-de-seguridad)
 
 **Evita VPNs gratis desconocidas.** Si no pagas, probablemente están vendiendo lo que haces — lo opuesto a lo que buscas.
-
----
-
-## Lista de verificación
-
-- Sé cuándo tiene sentido usar VPN (WiFi públicos) y cuándo no
-- Si uso una, es confiable — no una gratis con publicidad
-- Tengo lo básico resuelto primero: contraseña fuerte + verificación en dos pasos
 
 ---

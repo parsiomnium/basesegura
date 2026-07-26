@@ -86,13 +86,6 @@ Las apps de "limpieza" son las peores porque:
 | Tono | "¡URGENTE! Tu teléfono se destruirá" | "Se encontró una app potencialmente dañina" |
 | Botón | "Eliminar virus ahora" | "Desinstalar" (con el nombre exacto de la app) |
 
-## Qué NO hacer
-
-- No instales apps de "limpieza" o "antivirus" que no conoces — las legítimas son Google Play Protect (ya viene en tu teléfono) y pocas más
-- No toques "Aceptar" o "Permitir" cuando un sitio te pide enviar notificaciones
-- No descargues nada fuera de Google Play Store
-- No entres en pánico — el teléfono no explota, la SIM no se daña, las fotos no se borran por esperar
-
 ---
 
 ## Fuentes

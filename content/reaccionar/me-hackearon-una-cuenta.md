@@ -25,11 +25,6 @@ Actúa rápido. Mientras más esperes, más difícil es recuperarla.
 
 | Cuenta | Guía paso a paso |
 |--------|-----------------|
-| Gmail | [Recuperar cuenta de Gmail](/guias/gmail/recuperar-cuenta) |
-| Outlook / Hotmail | [Recuperar cuenta de Outlook](/guias/outlook/recuperar-cuenta) |
-| WhatsApp | [Recuperar cuenta de WhatsApp](/guias/whatsapp/recuperar-cuenta) |
-| Instagram | [Recuperar cuenta de Instagram](/guias/instagram/recuperar-cuenta) |
-| Facebook | [Recuperar cuenta de Facebook](/guias/facebook/recuperar-cuenta) |
 | Banco | [Fraude bancario — qué hacer y cómo denunciar](/reaccionar/fraude-bancario) |
 
 ---
@@ -51,17 +46,5 @@ Mientras sigues los pasos de recuperación:
 3. Revisa que tu correo y teléfono de recuperación sean los tuyos
 4. Activa la verificación en dos pasos. Ver: [Verificación en dos pasos](/prevenir/verificacion-en-dos-pasos)
 5. Cambia la contraseña en cualquier otro servicio donde usabas la misma
-
----
-
-## Lista de verificación
-
-- Identifiqué qué cuenta me robaron
-- Seguí el proceso de recuperación de esa plataforma
-- Cambié mi contraseña por una nueva y fuerte
-- Cerré todas las sesiones activas
-- Activé la verificación en dos pasos
-- Cambié contraseñas en otros servicios donde usaba la misma
-- Avisé a mis contactos si el atacante les escribió
 
 ---

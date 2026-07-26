@@ -112,4 +112,10 @@ Después de 30 días, se eliminan — salvo que haya una investigación activa [
 
 [2] Secure Privacy (2026). Opting out doesn't eliminate all data storage — OpenAI retains content for 30 days for abuse detection. https://secureprivacy.ai/blog/gpt-5-training-data-opt-out
 
+[3] NIST AI 600-1 (2024). Artificial Intelligence Risk Management Framework: Generative AI Profile — riesgos de privacidad en IA generativa, incluyendo filtración de datos personales en entrenamiento. https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+
+[4] OWASP Top 10 for LLM Applications 2025, LLM02: Sensitive Information Disclosure — riesgo de que el modelo exponga datos privados del usuario o del entrenamiento. https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/
+
+[5] OWASP Top 10 Privacy Risks. P6: Collection of data not required — minimización de datos: no entregar más información de la necesaria. https://owasp.org/www-project-top-10-privacy-risks/
+
 ---

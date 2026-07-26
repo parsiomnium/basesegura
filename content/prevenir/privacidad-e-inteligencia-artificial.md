@@ -127,33 +127,11 @@ El riesgo real es la acumulación: muchas preguntas inocuas, con el tiempo, cons
 
 ---
 
-## Qué NO hacer
-
-- No pegues contraseñas, tokens, claves de acceso ni datos bancarios en ninguna IA
-- No subas documentos confidenciales sin borrar datos identificables primero
-- No uses IA para procesar información de otras personas sin su consentimiento (datos de clientes, pacientes, estudiantes)
-- No asumas que porque "es solo una pregunta" no estás revelando nada — la suma de preguntas construye un perfil
-- No dejes el entrenamiento activado si usas la IA para temas personales o laborales sensibles
-
----
-
 ## Por qué importa
 
 El 82% de los usuarios considera sus conversaciones con IA como sensibles — más que el correo electrónico o las redes sociales — pero casi la mitad habla de temas de salud y un tercio de finanzas personales con estos chatbots [5]. Hay una brecha enorme entre la preocupación y el comportamiento.
 
 La IA no es tu enemigo. Es una herramienta útil. Pero es una herramienta que pertenece a una empresa privada, almacena lo que le dices, y por defecto usa esa información para sus propios fines. Saberlo te permite usarla bien — sin entregar más de lo necesario.
-
----
-
-## Lista de verificación
-
-- Desactivé el entrenamiento en las IAs que uso
-- No pego información personal identificable en mis conversaciones
-- Si necesito ayuda con un documento, borro nombres y datos reales antes de compartirlo
-- No subo archivos confidenciales sin revisar qué contienen
-- Uso chats temporales para temas sensibles
-- Entiendo que la IA puede inferir cosas que no le dije explícitamente
-- No comparto información de otras personas sin su consentimiento
 
 ---
 

@@ -70,37 +70,11 @@ Denuncia el robo. Necesitas el IMEI de tu celular (un número único de 15 dígi
 
 ---
 
-## Qué NO hacer
-
-- No esperes "a ver si aparece" — actúa inmediatamente
-- No intentes contactar al ladrón ni negociar
-- No hagas clic en mensajes que te lleguen después diciendo "encontramos tu celular" con un link — es una estafa común post-robo
-- No borres tu celular a distancia antes de bloquearlo (si lo borras, pierdes la ubicación)
-
----
-
 ## Cómo prepararte antes de que pase
 
 - **Anota tu IMEI.** Marca `*#06#` en tu celular ahora y guarda el número en un lugar seguro. Lo vas a necesitar para la denuncia.
 - **Activa "Buscar mi iPhone" o "Encontrar mi dispositivo".** Es lo que te permite bloquearlo a distancia.
 - **Asegúrate de tener contraseña fuerte en tu correo.** Si pierdes el celular pero tu correo está protegido, el daño es limitado.
 - **Activa la verificación en dos pasos.** Ver: [Verificación en dos pasos](/prevenir/verificacion-en-dos-pasos)
-
----
-
-## Lista de verificación
-
-**Si ya me robaron:**
-- Bloqueé mi celular a distancia
-- Llamé a mi compañía y bloqueé el chip
-- Cambié la contraseña de mi correo
-- Cambié la clave del banco
-- Cerré sesiones abiertas en mis cuentas
-- Hice la denuncia con el IMEI
-
-**Para estar preparado:**
-- Tengo mi IMEI anotado en un lugar seguro
-- Tengo activado "Buscar mi dispositivo"
-- Mi correo tiene verificación en dos pasos
 
 ---

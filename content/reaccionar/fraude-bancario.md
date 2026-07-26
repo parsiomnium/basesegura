@@ -127,20 +127,6 @@ La denuncia penal (en Carabineros, PDI o Fiscalía) activa la investigación cri
 
 ---
 
-## Lista de verificación
-
-- Llamé al banco y bloqueé mis tarjetas/cuenta
-- Guardé capturas de las transacciones no reconocidas
-- Guardé cualquier mensaje sospechoso previo al fraude
-- Cambié mi clave bancaria
-- Hice la denuncia en Carabineros, PDI o Fiscalía
-- Firmé la declaración jurada
-- Presenté el reclamo formal al banco con todos los documentos
-- Anoté el número de caso/folio
-- Si rechazaron mi reclamo: escalé a SERNAC o CMF
-
----
-
 ## Fuentes
 
 [1] Ley 21.673 (2024). Modifica la Ley 20.009 sobre medios de pago electrónicos. https://www.bcn.cl/leychile

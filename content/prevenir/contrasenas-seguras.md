@@ -46,16 +46,6 @@ Ver: [Qué es un gestor de contraseñas](/prevenir/gestores-de-contrasenas)
 
 ---
 
-## Qué NO hacer
-
-- No uses `123456`, `password`, `qwerty` ni variaciones
-- No repitas la misma contraseña en más de un servicio
-- No guardes contraseñas en notas del celular sin protección ni en post-its
-- No compartas tu contraseña por WhatsApp ni correo — ningún servicio legítimo te la va a pedir
-- No uses preguntas de seguridad con respuestas reales (esa información está en tus redes)
-
----
-
 ## Por qué importa
 
 El 94% de las contraseñas filtradas entre 2024 y 2025 estaban repetidas o reutilizadas [1]. Las credenciales robadas fueron el punto de entrada en el 22% de las brechas confirmadas en 2025 [2].
@@ -63,16 +53,6 @@ El 94% de las contraseñas filtradas entre 2024 y 2025 estaban repetidas o reuti
 No son ataques sofisticados. Son contraseñas débiles que un programa prueba automáticamente en decenas de servicios hasta que una funciona. Si usas la misma en tu correo y en una tienda online, cuando esa tienda se filtre, tu correo queda expuesto.
 
 Lo que hace fuerte a una contraseña es la **longitud**, no los símbolos. Cambiar letras por números (`P@ssw0rd`) no funciona — esos trucos están en todos los diccionarios de ataque. El estándar internacional de autenticación recomienda mínimo 15 caracteres, sin exigir símbolos obligatorios [3].
-
----
-
-## Lista de verificación
-
-- Mi contraseña de correo tiene al menos 15 caracteres
-- Mi contraseña del banco es diferente a la del correo
-- No reutilizo contraseñas entre servicios importantes
-- No uso información personal en mis contraseñas
-- Tengo activada la verificación en dos pasos en mi correo
 
 ---
 

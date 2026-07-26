@@ -165,34 +165,11 @@ Si no encuentras información sobre la tienda fuera de su propia página — no 
 
 ---
 
-## Qué NO hacer
-
-- No confíes en el candado como señal de seguridad — solo significa conexión cifrada
-- No confíes en que "se ve bien" — los clones son visualmente idénticos
-- No hagas clic en links de mensajes o correos que no esperabas
-- No compres en tiendas que solo conoces por un anuncio en redes sociales sin verificar primero
-- No ignores tu instinto — si algo se siente raro, detente
-
----
-
 ## Por qué importa
 
 El 89% de las personas confía en señales que no significan lo que creen [3]. Los sitios falsos ya no tienen errores obvios — están hechos con IA, tienen certificados de seguridad, pasan filtros de anuncios en redes sociales, y desaparecen antes de ser reportados.
 
 La verificación no es una sola cosa. Es una combinación: mirar la URL, revisar la antigüedad, buscar opiniones, usar herramientas. No necesitas hacer todas cada vez — pero tener varias opciones te protege mejor que depender de una sola señal.
-
----
-
-## Lista de verificación
-
-- Antes de ingresar datos, miro la URL completa
-- Sé que el candado no garantiza que el sitio es real
-- Llego a mis sitios importantes escribiendo la dirección yo mismo
-- Si un link me llegó por mensaje, no lo abro directamente
-- Antes de comprar en un sitio que no conozco, busco opiniones y verifico antigüedad
-- Si una oferta parece demasiado buena, la verifico antes de comprar
-- Conozco al menos una herramienta de verificación (VirusTotal, ScamAdviser)
-- Evalúo el riesgo según lo que el sitio me pide — no es lo mismo leer que ingresar datos
 
 ---
 

@@ -111,7 +111,7 @@ En 2026, se detectaron más de 400.000 dispositivos infectados por malware distr
 - **Mantén todo actualizado.** Navegador, sistema operativo, aplicaciones. Las actualizaciones corrigen las vulnerabilidades que los ataques drive-by explotan.
 - **No descargues cracks, keygens ni activadores.** No existe el "crack limpio". Si funciona y también instala malware, nunca te vas a enterar hasta que sea tarde.
 - **No desactives tu antivirus porque un sitio te lo pide.** Eso es una señal inequívoca de que el archivo es peligroso.
-- **Usa un bloqueador de anuncios.** Un bloqueador de anuncios es una extensión (un complemento pequeño) que se instala en tu navegador y bloquea la publicidad antes de que se cargue. Esto no solo quita los anuncios molestos — también te protege del malware que viene escondido en ellos. El más recomendado es uBlock Origin: es gratuito, de código abierto, y lo puedes instalar desde la tienda de extensiones de tu navegador (busca "uBlock Origin" en Chrome Web Store o en Firefox Add-ons). [Guía: cómo instalar uBlock Origin →](/guias/ublock-origin/instalar-y-configurar)
+- **Usa un bloqueador de anuncios.** Un bloqueador de anuncios es una extensión (un complemento pequeño) que se instala en tu navegador y bloquea la publicidad antes de que se cargue. Esto no solo quita los anuncios molestos — también te protege del malware que viene escondido en ellos. El más recomendado es uBlock Origin: es gratuito, de código abierto, y funciona completo en Firefox (en Chrome solo existe una versión reducida desde 2024). [Guía: cómo instalar uBlock Origin →](/guias/ublock-origin/instalar-y-configurar)
 
 ### Si vas a visitar sitios dudosos (asumiendo el riesgo)
 
@@ -156,33 +156,11 @@ Estas opciones tienen anuncios (así ganan dinero), pero son legítimos — no t
 
 ---
 
-## Qué NO hacer
-
-- No descargues programas de sitios que no conoces
-- No confíes en "desactiva el antivirus" como instrucción normal
-- No hagas clic en avisos que dicen "tu PC está infectado" dentro de una página web — son falsos
-- No descargues extensiones de navegador fuera de las tiendas oficiales (Chrome Web Store, Firefox Add-ons)
-- No asumas que porque un sitio es popular es seguro — los sitios pirata más visitados son los más peligrosos
-
----
-
 ## Por qué importa
 
 229 mil millones de visitas a sitios pirata se registraron en un solo año [7]. Más del 70% de esas visitas vienen de personas jóvenes que no perciben el riesgo [7]. En América Latina, los sitios pirata son entre 21 y 40 veces más peligrosos que los sitios legítimos [1].
 
 El malware más común hoy no destruye tu computador — roba tu información silenciosamente. Funciona en segundo plano, extrae todo en segundos, y nunca muestra un síntoma visible. La primera señal suele ser que ya perdiste una cuenta o viste un cargo en tu tarjeta.
-
----
-
-## Lista de verificación
-
-- No descargo programas piratas ni cracks
-- Tengo un bloqueador de anuncios activo (uBlock Origin)
-- Mantengo mi navegador y sistema actualizados
-- Si un sitio me pide desactivar el antivirus, cierro todo
-- No hago clic en avisos emergentes de sitios dudosos
-- Si necesito un programa, busco alternativas gratuitas legítimas primero
-- Entiendo que los sitios pirata son la fuente principal de infecciones
 
 ---
 

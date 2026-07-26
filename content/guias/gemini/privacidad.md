@@ -68,4 +68,10 @@ Lo que ganas: tus conversaciones no se usan para entrenar futuros modelos.
 
 [1] Google Support. Gemini Apps Privacy Hub. https://support.google.com/gemini/answer/13594961
 
+[2] NIST AI 600-1 (2024). Artificial Intelligence Risk Management Framework: Generative AI Profile — riesgos de privacidad en IA generativa, incluyendo retención y uso de datos de usuario para entrenamiento. https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+
+[3] OWASP Top 10 for LLM Applications 2025, LLM02: Sensitive Information Disclosure — riesgo de exposición de datos personales a través de modelos entrenados con conversaciones de usuarios. https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/
+
+[4] OWASP Top 10 Privacy Risks. P6: Collection of data not required — minimización de datos: desactivar la recolección innecesaria. https://owasp.org/www-project-top-10-privacy-risks/
+
 ---

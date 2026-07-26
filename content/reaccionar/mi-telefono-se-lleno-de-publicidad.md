@@ -132,14 +132,6 @@ Si algo en el teléfono te dice que instales una app para "limpiar", "proteger",
 
 ---
 
-## Qué NO hacer
-
-- No instales otra app de "limpieza" para arreglar el problema — así es como empezó
-- No borres todo el teléfono como primer intento — prueba los pasos de arriba primero
-- No ignores el problema pensando que se arregla solo — empeora con el tiempo
-
----
-
 ## Si nada de esto funciona
 
 Si después de seguir todos los pasos la publicidad sigue:

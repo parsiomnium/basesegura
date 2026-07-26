@@ -41,9 +41,8 @@ En casi todas las aplicaciones el proceso es el mismo:
 
 Si no lo encuentras o necesitas ayuda visual paso a paso, hay guías con capturas para cada plataforma:
 
-- [WhatsApp](/guias/whatsapp#verificacion-en-dos-pasos)
-- [Gmail](/guias/gmail#verificacion-en-dos-pasos)
-- [Instagram](/guias/instagram#verificacion-en-dos-pasos)
+- [WhatsApp](/guias/whatsapp/seguridad-y-privacidad)
+- [Gmail](/guias/gmail/verificacion-en-dos-pasos)
 
 ---
 
@@ -58,14 +57,6 @@ No todos los métodos son iguales:
 | **Llave física** | Un dispositivo que conectas para confirmar | El más seguro. Para quienes quieren máxima protección |
 
 Si el servicio te da a elegir, usa una app de autenticación (Google Authenticator o Microsoft Authenticator — ambas gratis). Si solo ofrece SMS, actívalo igual — cualquier segundo factor es mejor que ninguno.
-
----
-
-## Qué NO hacer
-
-- No la desactives porque "es molesto" — esa molestia es lo que impide que entren a tu cuenta
-- No uses como PIN tu fecha de nacimiento ni números obvios (123456, 000000)
-- No ignores códigos que te llegan sin haberlos pedido — eso significa que alguien está intentando entrar
 
 ---
 
@@ -90,16 +81,6 @@ Es el método más débil de los tres, pero sigue siendo mucho mejor que no tene
 Las cuentas con verificación en dos pasos resisten más del 99% de los intentos de robo automatizados — incluso si la contraseña ya se filtró [1].
 
 Es la medida más efectiva que existe para proteger una cuenta, y es gratis. Pero no es infalible — existen ataques avanzados que pueden superar algunos tipos de verificación. Por eso es importante combinarla con una contraseña fuerte.
-
----
-
-## Lista de verificación
-
-- Activé la verificación en mi correo principal
-- Activé la verificación en WhatsApp
-- Activé la verificación en mis redes sociales
-- Guardé mis códigos de respaldo en papel
-- Mi PIN no es mi fecha de nacimiento
 
 ---
 
