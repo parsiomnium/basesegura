@@ -22,6 +22,22 @@ Puede llegarte por correo, por mensaje de texto, por WhatsApp o incluso por llam
 
 ---
 
+## Lo más importante de este artículo
+
+Si un mensaje te pide dinero, datos personales, o que hagas algo urgente — **no actúes desde ese mensaje**. Aunque parezca real. Aunque venga de una dirección que reconoces. Aunque tenga el logo correcto y esté bien escrito.
+
+Haz esto en vez de responder:
+
+1. Para. No toques ningún link
+2. Ve tú mismo a la app o al sitio oficial (escríbelo en el navegador, no uses el link del mensaje)
+3. Si no puedes verificar así, llama al número que aparece en tu tarjeta, contrato o sitio oficial — nunca al que viene en el mensaje
+
+**¿Por qué?** Porque hay ataques donde el correo viene de una dirección real. Pasa cuando le roban la cuenta a alguien dentro de la organización (una universidad, una empresa, un banco). En esos casos no hay señales visibles — el correo es real, el diseño es real, el texto es perfecto. La única defensa es verificar siempre por otro canal antes de actuar.
+
+Las señales que siguen abajo te ayudan a detectar los ataques más comunes. Pero no son infalibles. La paciencia y la verificación por otro medio son la protección que funcionará la mayoría de las veces.
+
+---
+
 ## Cómo reconocerlo
 
 ### Señales de alerta
@@ -31,6 +47,8 @@ Puede llegarte por correo, por mensaje de texto, por WhatsApp o incluso por llam
 - **El remitente no es quien dice ser.** El mensaje dice ser de "Banco Santander" pero el correo viene de `seguridad@bco-santanderr.com` o un número desconocido.
 - **El link no va a donde debería.** Antes de hacer clic, mira la dirección. Si dice ser de Netflix pero el link es `netfl1x-verificar.com`, es falso.
 - **Tiene errores raros.** Faltas de ortografía, frases que no suenan naturales, logotipos borrosos. Aunque ojo — los mensajes falsos cada vez están mejor hechos.
+
+> Estas señales te permiten detectar la mayoría de los intentos. Pero recuerda: un ataque bien hecho no tendrá ninguna. Vuelve siempre a la regla de arriba.
 
 ### La regla de oro
 
