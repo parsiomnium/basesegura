@@ -44,6 +44,20 @@ No puedes memorizar 50 frases distintas. Para eso existen los gestores de contra
 
 Ver: [Qué es un gestor de contraseñas](/prevenir/gestores-de-contrasenas)
 
+### ¿Frases de palabras o contraseñas de símbolos?
+
+Ambas son seguras. La diferencia es para qué sirve cada una:
+
+**Frases de palabras** (como `gato ventana lluvia septiembre`) son para las pocas contraseñas que necesitas recordar de memoria — la del gestor de contraseñas, la del disco del computador, o la de tu correo principal si no usas gestor todavía.
+
+**Contraseñas de símbolos** (como `kR7#mP2!xL9$vN4`) son para todo lo demás — las que guarda tu gestor por ti. No necesitas memorizarlas ni escribirlas. El gestor las genera, las guarda y las pega por ti.
+
+¿Por qué no usar siempre frases de palabras? Porque son más largas. Algunos sitios ponen límite de caracteres o no aceptan espacios. Las de símbolos logran la misma protección en menos espacio.
+
+¿Por qué no usar siempre símbolos? Porque nadie puede memorizar `kR7#mP2!xL9$vN4`. Si necesitas recordar una contraseña sin ayuda de un gestor, las palabras aleatorias ganan.
+
+Puedes crear ambos tipos con el [generador de contraseñas](/herramientas/generador-contrasenas).
+
 ---
 
 ## Por qué importa
