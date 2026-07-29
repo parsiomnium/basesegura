@@ -72,15 +72,15 @@ function analyzePassword(password: string): Omit<Analysis, 'hibpCount' | 'hibpCh
       color: 'text-red-600 dark:text-red-400',
       barColor: 'bg-red-500',
     }
-  } else if (entropy < 36) {
+  } else if (entropy < 40) {
     strength = { label: 'Débil', color: 'text-red-500 dark:text-red-400', barColor: 'bg-red-400' }
-  } else if (entropy < 60) {
+  } else if (entropy < 55) {
     strength = {
       label: 'Aceptable',
       color: 'text-yellow-600 dark:text-yellow-400',
       barColor: 'bg-yellow-500',
     }
-  } else if (entropy < 80) {
+  } else if (entropy < 70) {
     strength = {
       label: 'Fuerte',
       color: 'text-green-600 dark:text-green-400',
@@ -205,8 +205,8 @@ export default function EvaluadorContrasenasPage() {
           </button>
         </div>
         <p className="text-xs text-[var(--text-secondary)] mt-2">
-          Tu contraseña no se envía a ningún servidor. La verificación contra filtraciones usa
-          k-anonymity (solo se envían los primeros 5 caracteres del hash SHA-1).
+          Tu contraseña no se envía a ningún servidor. La verificación contra filtraciones funciona
+          sin revelar tu contraseña completa — se explica abajo.
         </p>
       </div>
 
@@ -314,39 +314,69 @@ export default function EvaluadorContrasenasPage() {
       )}
 
       {/* Context */}
-      <div className="mt-8 text-sm text-[var(--text-secondary)] p-4 rounded-md border border-[var(--border)]">
-        <p className="mb-2 font-medium text-[var(--text)]">¿Cómo funciona la verificación?</p>
-        <p className="mb-2">
-          Usamos la API de{' '}
-          <a
-            href="https://haveibeenpwned.com/Passwords"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent)] hover:underline"
-          >
-            Have I Been Pwned
-          </a>{' '}
-          con k-anonymity: tu contraseña se convierte en un hash SHA-1 y solo se envían los primeros
-          5 caracteres del hash. El servidor devuelve todas las coincidencias con ese prefijo y la
-          verificación final se hace en tu navegador.
-        </p>
-        <p>
-          Aprende más en{' '}
-          <Link
-            href="/prevenir/contrasenas-seguras"
-            className="text-[var(--accent)] hover:underline"
-          >
-            Cómo crear contraseñas seguras
-          </Link>{' '}
-          y genera una nueva con nuestro{' '}
-          <Link
-            href="/herramientas/generador-contrasenas"
-            className="text-[var(--accent)] hover:underline"
-          >
-            generador de contraseñas
-          </Link>
-          .
-        </p>
+      <div className="mt-8 text-sm text-[var(--text-secondary)] p-4 rounded-md border border-[var(--border)] space-y-3">
+        <div>
+          <p className="font-medium text-[var(--text)] mb-1">
+            ¿Mi contraseña se envía a algún lugar?
+          </p>
+          <p>
+            No. Tu contraseña nunca sale de tu navegador. Lo que sí hacemos es verificar si apareció
+            en filtraciones de datos conocidas — pero sin enviarla completa. Funciona así:
+          </p>
+          <ol className="list-decimal pl-5 mt-2 space-y-1">
+            <li>
+              Tu contraseña se transforma en un código irreversible (llamado hash) dentro de tu
+              navegador.
+            </li>
+            <li>
+              Solo los primeros 5 caracteres de ese código se envían al servicio de verificación.
+            </li>
+            <li>El servicio devuelve una lista de todos los hashes que empiezan igual.</li>
+            <li>
+              Tu navegador busca si el tuyo está en esa lista. Si está, la contraseña fue filtrada.
+            </li>
+          </ol>
+          <p className="mt-2">
+            Esta técnica se llama <em>k-anonymity</em> — está diseñada para que nadie (ni siquiera
+            el servicio de verificación) pueda saber qué contraseña estás evaluando.
+          </p>
+        </div>
+        <div>
+          <p className="font-medium text-[var(--text)] mb-1">
+            ¿De dónde salen los datos de filtraciones?
+          </p>
+          <p>
+            De{' '}
+            <a
+              href="https://haveibeenpwned.com/Passwords"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--accent)] hover:underline"
+            >
+              Have I Been Pwned
+            </a>
+            , un servicio independiente creado por Troy Hunt (investigador de seguridad) que
+            recopila contraseñas de filtraciones públicas. Es usado por gobiernos, empresas y
+            gestores de contraseñas como Bitwarden y 1Password para verificar credenciales
+            comprometidas.
+          </p>
+        </div>
+        <div className="pt-2 border-t border-[var(--border)] space-y-1">
+          <p>
+            Si tu contraseña apareció en filtraciones, genera una nueva con el{' '}
+            <Link
+              href="/herramientas/generador-contrasenas"
+              className="text-[var(--accent)] hover:underline"
+            >
+              generador de contraseñas
+            </Link>
+            .
+          </p>
+          <p className="text-xs">
+            Método de verificación basado en el protocolo k-anonymity de Cloudflare/HIBP (2018).
+            Análisis de fortaleza basado en entropía según NIST SP 800-63B (2025).
+          </p>
+        </div>
       </div>
     </div>
   )

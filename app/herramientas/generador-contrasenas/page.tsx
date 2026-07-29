@@ -91,26 +91,33 @@ function getStrengthLabel(entropy: number): { label: string; color: string; desc
     return {
       label: 'Muy débil',
       color: 'bg-red-500',
-      description: 'Se puede adivinar en segundos.',
+      description: 'Un atacante la adivina en segundos, incluso sin herramientas sofisticadas.',
     }
-  if (entropy < 36)
-    return { label: 'Débil', color: 'bg-red-400', description: 'Vulnerable a ataques comunes.' }
-  if (entropy < 60)
+  if (entropy < 40)
+    return {
+      label: 'Débil',
+      color: 'bg-red-400',
+      description: 'Vulnerable a programas de ataque básicos. No la uses para nada importante.',
+    }
+  if (entropy < 55)
     return {
       label: 'Aceptable',
       color: 'bg-yellow-500',
-      description: 'Resistente a ataques básicos, pero mejorable.',
+      description:
+        'Resiste ataques automáticos simples, pero un atacante con recursos podría romperla. Funciona si el sitio limita intentos de acceso.',
     }
-  if (entropy < 80)
+  if (entropy < 70)
     return {
       label: 'Fuerte',
       color: 'bg-green-500',
-      description: 'Resistente a la mayoría de ataques.',
+      description:
+        'Resiste la mayoría de ataques, incluso si la base de datos del sitio se filtra. Suficiente para cuentas importantes.',
     }
   return {
     label: 'Muy fuerte',
     color: 'bg-green-600',
-    description: 'Prácticamente imposible de adivinar por fuerza bruta.',
+    description:
+      'No se puede romper con tecnología actual. Adecuada para proteger un gestor de contraseñas o un disco cifrado.',
   }
 }
 
@@ -422,31 +429,39 @@ export default function GeneradorContrasenasPage() {
       </div>
 
       {/* Context */}
-      <div className="mt-8 text-sm text-[var(--text-secondary)] p-4 rounded-md border border-[var(--border)]">
-        <p className="mb-2">
-          Todo se genera en tu navegador usando{' '}
-          <code className="bg-[var(--bg-secondary)] px-1 rounded text-xs">
-            crypto.getRandomValues()
-          </code>
-          , el generador criptográfico del sistema operativo. No se envía ni se almacena en ningún
-          lugar.
-        </p>
-        <p>
-          Aprende cuándo usar cada tipo en{' '}
-          <Link
-            href="/prevenir/contrasenas-seguras"
-            className="text-[var(--accent)] hover:underline"
-          >
-            Cómo crear contraseñas seguras
-          </Link>{' '}
-          y cómo gestionarlas en{' '}
-          <Link
-            href="/prevenir/gestores-de-contrasenas"
-            className="text-[var(--accent)] hover:underline"
-          >
-            Gestores de contraseñas
-          </Link>
-          .
+      <div className="mt-8 text-sm text-[var(--text-secondary)] p-4 rounded-md border border-[var(--border)] space-y-3">
+        <div>
+          <p className="font-medium text-[var(--text)] mb-1">
+            ¿Es seguro generar contraseñas aquí?
+          </p>
+          <p>
+            Sí. La contraseña se crea dentro de tu navegador usando el generador aleatorio de tu
+            sistema operativo — el mismo que usan las aplicaciones bancarias y de seguridad. En
+            ningún momento la contraseña sale de tu dispositivo ni se envía a internet.
+          </p>
+        </div>
+        <div>
+          <p className="font-medium text-[var(--text)] mb-1">
+            ¿Qué significan los &quot;bits&quot; en la barra de fortaleza?
+          </p>
+          <p>
+            Los bits miden cuántas combinaciones tendría que probar un atacante para adivinar tu
+            contraseña. Cada bit adicional duplica la dificultad. Con 60+ bits, un atacante
+            necesitaría millones de años usando todos los computadores disponibles hoy. Explicación
+            completa en{' '}
+            <Link
+              href="/aprender/como-funcionan-las-contrasenas"
+              className="text-[var(--accent)] hover:underline"
+            >
+              Cómo funcionan las contraseñas por dentro
+            </Link>
+            .
+          </p>
+        </div>
+        <p className="text-xs pt-2 border-t border-[var(--border)]">
+          Basado en NIST SP 800-63B (2025), el estándar internacional de autenticación digital. La
+          lista de palabras proviene de BIP-39, un estándar abierto y auditado usado en
+          criptografía.
         </p>
       </div>
     </div>
