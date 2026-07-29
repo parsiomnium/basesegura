@@ -104,6 +104,24 @@ export default function Home() {
             >
               Simulador de URLs
             </Link>
+            <Link
+              href="/herramientas/generador-contrasenas"
+              className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+            >
+              Generador de contraseñas
+            </Link>
+            <Link
+              href="/herramientas/evaluador-contrasenas"
+              className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+            >
+              Evaluador de contraseñas
+            </Link>
+            <Link
+              href="/herramientas/checklist-seguridad"
+              className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+            >
+              Checklist de seguridad
+            </Link>
           </div>
         </div>
       </section>
