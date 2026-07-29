@@ -92,12 +92,18 @@ export default function Home() {
             >
               Verificador de sitios
             </Link>
-            <span className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm text-[var(--text-secondary)]">
-              Simulador de phishing (pronto)
-            </span>
-            <span className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm text-[var(--text-secondary)]">
-              Simulador de URLs (pronto)
-            </span>
+            <Link
+              href="/herramientas/simulador-phishing"
+              className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+            >
+              Simulador de phishing
+            </Link>
+            <Link
+              href="/herramientas/simulador-urls"
+              className="px-3 py-1.5 rounded-md bg-[var(--bg-secondary)] text-sm hover:text-[var(--accent)] transition-colors"
+            >
+              Simulador de URLs
+            </Link>
           </div>
         </div>
       </section>
