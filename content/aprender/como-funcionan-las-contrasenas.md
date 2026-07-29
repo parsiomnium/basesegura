@@ -70,7 +70,7 @@ En la práctica, los atacantes combinan ambos: empiezan con diccionarios (lo má
 
 La velocidad depende del tipo de hash:
 - MD5 (inseguro, sitios antiguos): un atacante puede probar **100 mil millones** de contraseñas por segundo con hardware especializado.
-- bcrypt (seguro, sitios modernos): ~10,000 por segundo con el mismo hardware.
+- bcrypt (seguro, sitios modernos): ~5,000 por segundo con el mismo hardware.
 
 ---
 
@@ -143,6 +143,6 @@ La lección: **lo que importa no es cómo se ve la contraseña, sino cómo se ge
 
 [3] Bonneau, J. et al. (2012). "The Science of Guessing: Analyzing an Anonymized Corpus of 70 Million Passwords." IEEE Symposium on Security and Privacy. https://ieeexplore.ieee.org/document/6234435
 
-[4] Hashcat benchmarks (2024). Velocidades de cracking por tipo de hash y hardware. https://hashcat.net/hashcat/
+[4] Tutorials Technology (2026). Hashcat Bcrypt Benchmark: RTX 5090, RTX 4090, RX 7900 XTX Speed Table. https://tutorials.technology/tutorials/hashcat-bcrypt-benchmark-rtx-4090-5090-2026.html
 
 ---

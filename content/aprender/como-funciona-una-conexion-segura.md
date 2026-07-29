@@ -127,6 +127,6 @@ Significa que el certificado tiene un problema:
 
 [3] NIST SP 800-52 Rev. 2 (2024). Guidelines for TLS Implementations. https://csrc.nist.gov/pubs/sp/800/52/r2/final
 
-[4] Google Transparency Report (2024). HTTPS encryption on the web. https://transparencyreport.google.com/https/overview
+[4] Google Transparency Report (2025). HTTPS encryption on the web. https://transparencyreport.google.com/https
 
 ---

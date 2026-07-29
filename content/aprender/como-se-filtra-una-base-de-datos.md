@@ -122,7 +122,7 @@ En ambos casos: no la uses. Si la usas en varios sitios, cámbiala en todos.
 
 ## Fuentes
 
-[1] Shodan/Censys (2024). Bases de datos expuestas públicamente. https://www.shodan.io/
+[1] Security Affairs (2026). "The Hidden Ransomware Economy Running on Exposed Databases." Análisis de 65,907 sistemas expuestos. https://securityaffairs.com/192711/cyber-crime/the-hidden-ransomware-economy-running-on-exposed-databases.html
 
 [2] OWASP (2024). Credential Stuffing Prevention. https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html
 
