@@ -84,7 +84,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="mt-4">
-          <h3 className="text-sm font-semibold text-[var(--text-secondary)] mb-2">Practica</h3>
+          <h3 className="text-sm font-semibold text-[var(--text-secondary)] mb-2">Herramientas</h3>
           <div className="flex flex-wrap gap-2">
             <Link
               href="/herramientas/verificar-sitio"
